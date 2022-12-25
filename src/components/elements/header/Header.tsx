@@ -3,7 +3,7 @@ import { Logo } from '../../ui/logo/Logo'
 import { Navigation } from '../navigation/Navigation'
 import { Button } from '../../ui/button/Button'
 import ShareIcon from '../../../assets/icons/share.svg'
-import './Header'
+import './Header.scss'
 
 const info = {
   pitchDeckText: 'Pitch deck',

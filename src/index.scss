@@ -44,6 +44,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background: #000000;
 }
 input,
 button,
@@ -85,4 +86,8 @@ h6 {
 
 a {
   font-family: $fontfamilyPopins;
+}
+
+.wrapper {
+  position: relative;
 }

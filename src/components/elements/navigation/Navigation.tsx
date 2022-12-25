@@ -1,5 +1,6 @@
 import React from 'react'
-import { NavigationItem } from './NavigationItem'
+import { NavigationItem } from './item/NavigationItem'
+import './Navigation.scss'
 
 const menu = ['Home', 'Our missons', 'How to play', 'Roadmap']
 

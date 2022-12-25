@@ -1,0 +1,63 @@
+.intro {
+  padding-bottom: 139px;
+  background: url("../../../assets/main-druid.png") left top / 60% no-repeat;
+  &__inner {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+    position: relative;
+    max-width: 1618px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__info {
+    transform: translateX(50%);
+    margin-top: 352px;
+    max-width: 534px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__preview {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #96764b;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 62px;
+    line-height: 109%;
+    color: #ffffff;
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 160%;
+    color: rgba(#ffffff, 0.6);
+  }
+  &-comunity {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &__title {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 140%;
+      color: #595959;
+    }
+    &__buttons {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      .button {
+        width: 180.82px;
+      }
+    }
+  }
+}
