@@ -11,4 +11,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    border: 1px solid #96764b;
+  }
+  &-green {
+    background: linear-gradient(90deg, #66bf31 0%, #308a33 100%);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+    &:hover {
+      background: linear-gradient(264.36deg, #7aff2b -9.35%, #f99f2f 98.01%);
+    }
+  }
 }

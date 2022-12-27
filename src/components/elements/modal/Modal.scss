@@ -1,0 +1,125 @@
+.modal {
+  background: rgba(19, 18, 18, 0.8);
+  border: 1px solid #96764b;
+  backdrop-filter: blur(17px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  overflow-y: auto;
+  display: none;
+  .-active {
+    display: block;
+  }
+  &__inner {
+    max-width: 1328px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 173.5px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 75px 0;
+    overflow-y: auto;
+  }
+  &__close {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__close-text {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+  }
+
+  &__close-crest {
+    width: 18.38px;
+    height: 18.38px;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background: #d9d9d9;
+      border-radius: 1px;
+      width: 2px;
+      height: 24px;
+      right: 8px;
+      top: -3px;
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__head-title {
+    font-weight: 900;
+    font-size: 62px;
+    line-height: 80px;
+    background: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    .button {
+      width: 160px;
+    }
+  }
+
+  &__body {
+  }
+
+  &__body-title {
+    background: linear-gradient(152.08deg, #d4ab79 47.7%, #d9aa5e 168.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 16px;
+  }
+
+  &__menu {
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+  }
+  &-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    &__item {
+    }
+
+    &__link {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 32px;
+      color: #fff;
+    }
+  }
+}

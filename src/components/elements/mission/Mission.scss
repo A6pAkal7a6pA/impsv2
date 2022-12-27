@@ -1,0 +1,104 @@
+.mission {
+  max-width: 1328px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 138px 0;
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(136.32deg, #f99f2f 16.32%, #6959b1 85.53%);
+    opacity: 0.1;
+    filter: blur(235.137px);
+    z-index: -1;
+  }
+  &__inner {
+    background: linear-gradient(180deg, rgba(35, 34, 32, 0.4) 0%, rgba(35, 34, 32, 0) 123.88%);
+    border-radius: 60px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 62px;
+    line-height: 100%;
+    text-align: center;
+    background: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 23px;
+    max-width: 670px;
+  }
+
+  &__engine {
+    margin-bottom: 112px;
+  }
+}
+.mission-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 112px;
+  &__item {
+    font-family: "Inter";
+    padding: 24px;
+    max-width: 280px;
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(82.77deg, #fbf6cd 5.38%, #f99f2f 21.58%, #fbf6cd 44.75%);
+      border-radius: 20px;
+    }
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(#ffffff, 0.6);
+  }
+}
+.mission-available {
+  &__title {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.019em;
+    margin-bottom: 33px;
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  &__item {
+  }
+
+  &__img {
+  }
+}

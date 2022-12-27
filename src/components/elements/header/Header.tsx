@@ -14,7 +14,7 @@ const info = {
 
 export const Header = () => {
   return (
-    <div className="header">
+    <div className="header header-sticky">
       <div className="header__inner">
         <Logo />
         <Navigation />

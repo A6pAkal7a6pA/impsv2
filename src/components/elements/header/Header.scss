@@ -5,6 +5,10 @@
   padding: 30px 0;
   width: 100%;
   z-index: 10;
+  &-sticky {
+    background: rgba(19, 18, 18, 0.6);
+    backdrop-filter: blur(8px);
+  }
   &__inner {
     display: flex;
     align-items: center;
