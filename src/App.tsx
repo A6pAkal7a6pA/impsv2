@@ -5,6 +5,7 @@ import { Attachment } from './components/elements/attachment/Attachment'
 import { Modal } from './components/elements/modal/Modal'
 import { Mission } from './components/elements/mission/Mission'
 import { HowToPlay } from './components/elements/how_to_play/HowToPlay'
+import { Expirience } from './components/elements/expirience/Expiriance'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Modal />
       <Mission />
       <HowToPlay />
+      <Expirience />
     </div>
   )
 }

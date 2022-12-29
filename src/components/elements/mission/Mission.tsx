@@ -5,12 +5,13 @@ import tablet from '../../../assets/availabiles/DeviceTabletCamera.svg'
 import mobile from '../../../assets/availabiles//DeviceMobileSpeaker.svg'
 import browser from '../../../assets/availabiles/Browser.svg'
 import './Mission.scss'
+import { Color, Title } from '../../ui/title/Title'
 
 export const Mission = () => {
   return (
     <div className="mission">
       <div className="mission__inner">
-        <h2 className="mission__title">New blockchain and token are on</h2>
+        <Title color={Color.GOLD} text="New blockchain and token are on" />
         <img className="mission__engine" src={oasis} alt="oasis" />
         <div className="mission-info">
           <div className="mission-info__item">

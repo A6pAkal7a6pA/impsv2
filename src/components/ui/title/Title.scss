@@ -1,0 +1,15 @@
+.title {
+  font-weight: 900;
+  font-size: 62px;
+  line-height: 62px;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  &-gold {
+    background-image: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
+  }
+  &-blue {
+    background-image: linear-gradient(82.77deg, #4da9ff 5.38%, #54e0ff 44.75%);
+  }
+}
