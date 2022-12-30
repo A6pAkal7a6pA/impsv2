@@ -1,0 +1,133 @@
+.allocation {
+  &__inner {
+    max-width: 1328px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .title {
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    max-width: 590px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 160%;
+    color: rgba(#ffffff, 0.6);
+    margin: 0 auto 24px auto;
+  }
+  &-price {
+    margin-bottom: 64px;
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 713px;
+      margin: 0 auto;
+      gap: 24px;
+    }
+
+    &__item {
+      width: 100%;
+      height: 60px;
+      border: 1px solid #2c2c2c;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 32px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    &__amount {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      background: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+  &-graph {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+    }
+
+    &__column {
+      width: 100%;
+      background: rgba(56, 56, 56, 0.3);
+      border-radius: 16px;
+      height: 358px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    &__number {
+      font-family: "Nunito";
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 55px;
+      background: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    &__column-filled {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 20%;
+      background: linear-gradient(138.83deg, #aee3f9 39.38%, #41b3cc 115.64%);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      transform: rotate(-180deg);
+    }
+
+    &__amount {
+      font-family: "Inter";
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: -0.019em;
+      background: linear-gradient(152.08deg, #d4ab79 47.7%, #d9aa5e 168.73%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    &__name {
+      font-family: "Inter";
+      text-align: center;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 140%;
+      color: #ffffff;
+    }
+  }
+}

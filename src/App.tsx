@@ -7,6 +7,7 @@ import { Mission } from './components/elements/mission/Mission'
 import { HowToPlay } from './components/elements/how_to_play/HowToPlay'
 import { Expirience } from './components/elements/expirience/Expiriance'
 import { Team } from './components/elements/team/Team'
+import { TokenAllocation } from './components/elements/allocation/TokenAllocation'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <HowToPlay />
       <Expirience />
       <Team />
+      <TokenAllocation />
     </div>
   )
 }
