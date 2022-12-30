@@ -2,7 +2,7 @@ import React from 'react'
 import { NavigationItem } from './item/NavigationItem'
 import './Navigation.scss'
 
-const menu = ['Home', 'Our missons', 'How to play', 'Roadmap']
+const menu = ['Home', 'Our missions', 'How to play', 'Roadmap']
 
 export const Navigation = () => {
   return (

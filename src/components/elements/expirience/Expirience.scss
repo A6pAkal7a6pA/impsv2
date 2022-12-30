@@ -1,20 +1,74 @@
 .expirience {
-
-
-  &_inner {
-    width: 1280px;
-height: 877px;
-left: 224px;
-top: 60px;
-justify-self: center;
-/* Linear */
-background: linear-gradient(180deg, rgba(35, 34, 32, 0.4) 0%, rgba(35, 34, 32, 0) 123.88%);
-border-radius: 60px;
+  &__inner {
+    max-width: 1328px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(
+      180deg,
+      rgba(35, 34, 32, 0.4) 0%,
+      rgba(35, 34, 32, 0) 123.88%
+    );
+    border-radius: 60px;
+    padding: 84px 80px 52px 80px;
   }
-
+  .title {
+    margin-bottom: 23px;
+  }
   &__subtitle {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 160%;
+    text-align: center;
+    color: rgba(#ffffff, 0.6);
+    max-width: 575px;
+    margin: 0 auto 80px auto;
   }
-
-  &__title {
+  &__items {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__item {
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 64px;
+  }
+  &__number {
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.019em;
+    background: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 16px;
+  }
+  &__text {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.019em;
+    color: rgba(#ffffff, 0.6);
+  }
+  &__companies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  &__company {
+    max-width: 166.67px;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #2c2c2c;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

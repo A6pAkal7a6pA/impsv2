@@ -2,6 +2,20 @@ import React from 'react'
 import './Expirience.scss'
 import { Color, Title } from '../../ui/title/Title'
 
+const importAll = (context: __WebpackModuleApi.RequireContext) => {
+  const images: string[] = []
+  context.keys().map((item: any) => images.push(context(item)))
+  return images
+}
+
+const companies = importAll(
+  require.context(
+    '../../../assets/expirience/companies',
+    false,
+    /\.(png|jpe?g|svg)$/
+  )
+)
+
 const texts = [
   'Over 15 years of experience in game development and enterprise',
   'Experience working on complex projects such as MMORPG',
@@ -11,7 +25,7 @@ const texts = [
 
 export const Expirience = () => {
   return (
-    <div className="expirience">
+    <div className="expirience" id="Our">
       <div className="expirience__inner">
         <Title color={Color.BLUE} text="Our expirience" />
         <div className="expirience__subtitle">
@@ -26,6 +40,14 @@ export const Expirience = () => {
             </div>
           ))}
         </div>
+        <div className="expirience__companies">
+          {companies.map((company, index) => (
+            <div key={index} className="expirience__company">
+              <img src={company} className="expirience__company-img" />
+            </div>
+          ))}
+        </div>
+        {/* TODO */}
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ import { PreTitle } from '../../ui/pre_title/PreTitle'
 
 export const Intro = () => {
   return (
-    <div className="intro">
+    <div className="intro" id="Home">
       <div className="intro__inner">
         <div className="intro__info">
           <PreTitle text="The first NFT" />
