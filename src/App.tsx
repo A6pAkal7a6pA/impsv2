@@ -6,6 +6,7 @@ import { Modal } from './components/elements/modal/Modal'
 import { Mission } from './components/elements/mission/Mission'
 import { HowToPlay } from './components/elements/how_to_play/HowToPlay'
 import { Expirience } from './components/elements/expirience/Expiriance'
+import { Team } from './components/elements/team/Team'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Mission />
       <HowToPlay />
       <Expirience />
+      <Team />
     </div>
   )
 }

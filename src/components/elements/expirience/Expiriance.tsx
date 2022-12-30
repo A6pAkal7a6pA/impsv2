@@ -1,6 +1,10 @@
 import React from 'react'
 import './Expirience.scss'
 import { Color, Title } from '../../ui/title/Title'
+import allodsImg from '../../../assets/expirience/games/gm1.png'
+import shattleImg from '../../../assets/expirience/games/gm2.png'
+import skyForgeImg from '../../../assets/expirience/games/gm3.png'
+import untoldImg from '../../../assets/expirience/games/gm4.png'
 
 const importAll = (context: __WebpackModuleApi.RequireContext) => {
   const images: string[] = []
@@ -15,6 +19,41 @@ const companies = importAll(
     /\.(png|jpe?g|svg)$/
   )
 )
+
+const games = [
+  {
+    img: allodsImg
+  },
+  {
+    img: shattleImg,
+    content: [
+      {
+        title: 'MAU:',
+        text: '1 000 000 +'
+      },
+      {
+        title: 'LTV:',
+        text: '100$'
+      }
+    ]
+  },
+  {
+    img: skyForgeImg,
+    content: [
+      {
+        title: 'MAU:',
+        text: '500 000 +'
+      },
+      {
+        title: 'LTV:',
+        text: '250$'
+      }
+    ]
+  },
+  {
+    img: untoldImg
+  }
+]
 
 const texts = [
   'Over 15 years of experience in game development and enterprise',
@@ -43,11 +82,40 @@ export const Expirience = () => {
         <div className="expirience__companies">
           {companies.map((company, index) => (
             <div key={index} className="expirience__company">
-              <img src={company} className="expirience__company-img" />
+              <img
+                src={company}
+                alt="company"
+                className="expirience__company-img"
+              />
             </div>
           ))}
         </div>
-        {/* TODO */}
+        <div className="expirience-game">
+          {games.map((game, index) => (
+            <div key={index} className="expirience-game__item">
+              <div className="expirience-game__image">
+                <img
+                  src={game.img}
+                  alt="game"
+                  className="expirience-game__img"
+                />
+              </div>
+              <div className="expirience-game__content">
+                {game.content &&
+                  game.content.map((content, index) => (
+                    <div key={index} className="expirience-game__element">
+                      <span className="expirience-game__title">
+                        {content.title}
+                      </span>
+                      <span className="expirience-game__text">
+                        {content.text}
+                      </span>
+                    </div>
+                  ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

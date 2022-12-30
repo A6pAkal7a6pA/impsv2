@@ -1,0 +1,19 @@
+.team {
+  &__inner {
+    max-width: 1328px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {
+    margin-bottom: 64px;
+  }
+
+  &__people {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 42px;
+    justify-content: center;
+  }
+}
