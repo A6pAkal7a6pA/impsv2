@@ -1,0 +1,19 @@
+.road {
+  &__inner {
+    max-width: 1328px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .title {
+    margin-bottom: 85px;
+  }
+
+  &__years {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 24px;
+  }
+}

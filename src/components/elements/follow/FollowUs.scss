@@ -1,0 +1,29 @@
+.follow {
+  margin-bottom: 88px;
+  &__inner {
+    max-width: 1328px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 62px;
+    line-height: 100%;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  .socio {
+    margin-bottom: 80px;
+  }
+
+  &__links {
+    max-width: 344px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}

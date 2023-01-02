@@ -8,6 +8,10 @@ import { HowToPlay } from './components/elements/how_to_play/HowToPlay'
 import { Expirience } from './components/elements/expirience/Expiriance'
 import { Team } from './components/elements/team/Team'
 import { TokenAllocation } from './components/elements/allocation/TokenAllocation'
+import { Roadmap } from './components/elements/roadmap/Roadmap'
+import { FollowUs } from './components/elements/follow/FollowUs'
+import { Copyright } from './components/elements/copyright/Copyright'
+import { TokenDistribution } from './components/elements/distribution/TokenDistribution'
 
 function App() {
   return (
@@ -18,9 +22,13 @@ function App() {
       <Modal />
       <Mission />
       <HowToPlay />
+      <Roadmap />
       <Expirience />
       <Team />
       <TokenAllocation />
+      <TokenDistribution />
+      <FollowUs />
+      <Copyright />
     </div>
   )
 }
