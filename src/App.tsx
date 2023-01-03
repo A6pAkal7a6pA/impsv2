@@ -12,6 +12,8 @@ import { Roadmap } from './components/elements/roadmap/Roadmap'
 import { FollowUs } from './components/elements/follow/FollowUs'
 import { Copyright } from './components/elements/copyright/Copyright'
 import { TokenDistribution } from './components/elements/distribution/TokenDistribution'
+import { Goal } from './components/elements/goal/Goal'
+import { Tokenomic } from './components/elements/imp_token/Tokenomic'
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
       <Modal />
       <Mission />
       <HowToPlay />
+      <Goal />
+      <Tokenomic />
       <Roadmap />
       <Expirience />
       <Team />

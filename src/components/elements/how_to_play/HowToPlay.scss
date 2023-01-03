@@ -1,3 +1,7 @@
+$warrior: linear-gradient(82.76deg, #792721 -8.67%, #ff655f 44.75%);
+$rogue: linear-gradient(123.98deg, #30ca72 30.32%, #429841 106.48%);
+$mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
+
 .play {
   &__inner {
   }
@@ -58,10 +62,23 @@
     }
   }
   &-slider {
-    &__wrapper {
-    }
-
+    max-width: 1029px;
+    width: 100%;
     &__slide {
+      width: 448px;
+      height: 385px;
+      background-position: center;
+      background-size: contain;
+      &:not(.swiper-slide-visible) {
+        opacity: 0;
+      }
+    }
+    &__slide-img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      object-fit: contain;
     }
   }
   &-description {
@@ -89,8 +106,7 @@
     &__title-text {
       font-weight: 900;
       font-size: 48px;
-      line-height: 100%;
-      // background: linear-gradient(82.76deg, #792721 -8.67%, #ff655f 44.75%);TODO
+      line-height: 120%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
