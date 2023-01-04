@@ -1,3 +1,13 @@
+$colors: (
+  "lightblue": "linear-gradient(82.77deg, #7C9EC3 5.38%, #7A95AA 44.75%)",
+  "yellow": "linear-gradient(82.77deg, #ad6640 5.38%, #794328 44.75%)",
+  "brown": "linear-gradient(82.77deg, #D4AB79 5.38%, #D9AA5E 44.75%)",
+  "grey": "linear-gradient(82.77deg, #c9b398 5.38%, #c1c0c0 44.75%)",
+  "green": "linear-gradient(82.77deg, #30ca72 5.38%, #429841 44.75%)",
+  "lightgreen": "linear-gradient(82.77deg, #90ae3c 5.38%, #79993c 44.75%)",
+  "blue": "linear-gradient(82.77deg, #aee3f9 5.38%, #41b3cc 44.75%)",
+);
+
 .goal {
   &__inner {
     max-width: 1328px;
@@ -15,19 +25,60 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #96764b;
+    margin-bottom: 24px;
+  }
+  .title {
+    max-width: 751px;
+    margin: 0 auto;
+    margin-bottom: 154px;
   }
   &-road {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 847.76px;
+    width: 100%;
+    height: 1592.63px;
+    background: url("../../../assets/goal/goalBG.svg") center / contain no-repeat;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 78.37px;
     &-item {
+      $roadItem: &;
       max-width: 530px;
       width: 100%;
       height: 240px;
       background: #171616;
       border-radius: 0px 0px 24px 24px;
-      position: relative;
+      position: absolute;
+      &:nth-child(2n + 1) {
+        left: -161px;
+      }
+      &:nth-child(2n) {
+        right: -191.24px;
+      }
+      &:nth-child(1) {
+        top: -90px;
+      }
+      &:nth-child(2) {
+        top: 118px;
+      }
+      &:nth-child(3) {
+        top: 433px;
+      }
+      &:nth-child(4) {
+        top: 683px;
+      }
+      &:nth-child(5) {
+        top: 928px;
+      }
+      &:nth-child(6) {
+        top: 1139px;
+      }
+      &:nth-child(7) {
+        top: 1431px;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -35,7 +86,7 @@
         top: 0;
         width: 100%;
         height: 8px;
-        background: linear-gradient(82.77deg, #7c9ec3 5.38%, #7a95aa 44.75%);
+        // background: linear-gradient(82.77deg, #7c9ec3 5.38%, #7a95aa 44.75%);
       }
       &__inner {
         display: flex;
@@ -64,21 +115,22 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        width: 22.71px;
-        height: 24px;
-        background: url('../../../assets/goal/monetka.png') center / cover no-repeat;
       }
 
       &__point {
         width: 22.71px;
         height: 24px;
+        background: url("../../../assets/goal/monetka.png") center / cover no-repeat;
+        opacity: 0.1;
+        &-active {
+          opacity: 1;
+        }
       }
 
       &__title {
         font-weight: 900;
         font-size: 32px;
         line-height: 100%;
-        background: linear-gradient(82.77deg, #7c9ec3 5.38%, #7a95aa 44.75%); //TODO
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -90,6 +142,14 @@
         font-size: 21px;
         line-height: 160%;
         color: rgba(#ffffff, 0.6);
+      }
+      @each $name, $value in $colors {
+        &-#{$name} {
+          #{$roadItem}__title,
+          &::before {
+            background-image: #{$value};
+          }
+        }
       }
     }
   }

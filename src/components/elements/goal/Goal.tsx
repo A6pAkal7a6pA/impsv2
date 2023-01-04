@@ -12,31 +12,38 @@ import './Goal.scss'
 const steps = [
   {
     img: stepImg1,
-    text: 'Purchase or rent of the character'
+    text: 'Purchase or rent of the character',
+    color: 'lightblue'
   },
   {
     img: stepImg2,
-    text: 'Misson copletion'
+    text: 'Misson copletion',
+    color: 'yellow'
   },
   {
     img: stepImg3,
-    text: 'Joining the clan'
+    text: 'Joining the clan',
+    color: 'brown'
   },
   {
     img: stepImg4,
-    text: 'The capture of the castle and the rare resoursess/Trade'
+    text: 'The capture of the castle and the rare resoursess/Trade',
+    color: 'grey'
   },
   {
     img: stepImg5,
-    text: 'Clan alliance formation'
+    text: 'Clan alliance formation',
+    color: 'green'
   },
   {
     img: stepImg6,
-    text: 'Crashing raid bosses'
+    text: 'Crashing raid bosses',
+    color: 'lightgreen'
   },
   {
     img: stepImg7,
-    text: 'Capture of the territories and castles'
+    text: 'Capture of the territories and castles',
+    color: 'blue'
   }
 ]
 
@@ -48,7 +55,10 @@ export const Goal = () => {
         <Title color={Color.GOLD} text="The goal is the territory domination" />
         <div className="goal-road">
           {steps.map((step, i) => (
-            <div key={i} className="goal-road-item">
+            <div
+              key={i}
+              className={`goal-road-item goal-road-item-${step.color}`}
+            >
               <div className="goal-road-item__inner">
                 <div className="goal-road-item__image">
                   <img
@@ -59,7 +69,16 @@ export const Goal = () => {
                 </div>
                 <div className="goal-road-item__content">
                   <div className="goal-road-item__points">
-                    <div className="goal-road-item__point"></div>
+                    {steps.map((_, index) => (
+                      <div
+                        key={index}
+                        className={`goal-road-item__point ${
+                          index <= steps.length - (steps.length - i)
+                            ? 'goal-road-item__point-active'
+                            : ''
+                        }`}
+                      ></div>
+                    ))}
                   </div>
                   <div className="goal-road-item__title">{`Step ${i + 1}`}</div>
                   <div className="goal-road-item__text">{step.text}</div>
@@ -72,3 +91,9 @@ export const Goal = () => {
     </div>
   )
 }
+
+//(7 - index) <= steps.legth
+//7 - 2
+//7 - 3
+
+//1  7

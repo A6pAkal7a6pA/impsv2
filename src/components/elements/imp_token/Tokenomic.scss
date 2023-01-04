@@ -48,9 +48,22 @@
     }
 
     &__separator {
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) -6.48%, #ffffff 45.65%, rgba(255, 255, 255, 0) 100%);
+      opacity: 0.4;
+      border-radius: 20px;
+      margin: 120px 0 40px 0;
     }
 
     &__buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .button-green {
+        min-width: 160px;
+      }
     }
     &-item {
       &__inner {

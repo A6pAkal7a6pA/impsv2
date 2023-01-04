@@ -16,7 +16,7 @@ import './HowToPlay.scss'
 
 const persons = [
   {
-    person: 'Warrior',
+    person: 'warrior',
     mainImg: warrior,
     iconImgDefault: warriorIconDefault,
     iconImgActive: warriorIconActive,
@@ -24,7 +24,7 @@ const persons = [
       'Warrior - professional fighters, have a lot of HP, good protection against physical attacks and high damage, but they are quite slow, have poor protection against magic, and have a low chance to avoid attacks.'
   },
   {
-    person: 'Rogue',
+    person: 'rogue',
     mainImg: rogue,
     iconImgDefault: rogueIconDefault,
     iconImgActive: rogueIconActive,
@@ -32,7 +32,7 @@ const persons = [
       'Rogue - agile and evasive, greedy for money, and have a keen eye. In a head-on fight, they rely on dodges and rare but strong blows to enemies&apos; weak points.'
   },
   {
-    person: 'Mage',
+    person: 'mage',
     mainImg: mage,
     iconImgDefault: mageIconDefault,
     iconImgActive: mageIconActive,

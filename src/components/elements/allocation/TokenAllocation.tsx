@@ -46,6 +46,13 @@ const info = [
 ]
 
 export const TokenAllocation = () => {
+  const total = info.reduce(
+    (accumulator, currentValue) => accumulator + currentValue.amount,
+    0
+  )
+  function percentage(partialValue: number, totalValue: number): number {
+    return (100 * partialValue) / totalValue
+  }
   return (
     <div className="allocation">
       <div className="allocation__inner">
@@ -74,8 +81,15 @@ export const TokenAllocation = () => {
           {info.map((item, index) => (
             <div key={index} className="allocation-graph__item">
               <div className="allocation-graph__column">
-                <div className="allocation-graph__number">4%</div>
-                <div className="allocation-graph__column-filled"></div>
+                <div className="allocation-graph__number">
+                  {`${percentage(item.amount, total).toFixed(1)}%`}
+                </div>
+                <div
+                  className="allocation-graph__column-filled"
+                  style={{
+                    height: `${percentage(item.amount, total).toFixed(1)}%`
+                  }}
+                ></div>
               </div>
               <div className="allocation-graph__amount">{`${item.amount}kk`}</div>
               <div className="allocation-graph__name">{item.name}</div>
