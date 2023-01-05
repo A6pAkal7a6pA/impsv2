@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/impsv2/static/css/main.4592a149.css",
-    "main.js": "/impsv2/static/js/main.4f65c0c5.js",
+    "main.css": "/impsv2/static/css/main.30ae61ec.css",
+    "main.js": "/impsv2/static/js/main.08c37bf1.js",
     "static/media/main-druid.png": "/impsv2/static/media/main-druid.983e7f99021852157797.png",
+    "static/media/gameVault.svg": "/impsv2/static/media/gameVault.594d5b261b4f024f08b72bb3a5bfb1d0.svg",
     "static/media/mage-bg.png": "/impsv2/static/media/mage-bg.24a31b1c456565d2871f.png",
     "static/media/rogue-bg.png": "/impsv2/static/media/rogue-bg.1ccc5d2a77ae618cfd54.png",
     "static/media/warrior-bg.png": "/impsv2/static/media/warrior-bg.e7fa2555f45e72a1ba51.png",
@@ -11,6 +12,7 @@
     "static/media/impToken.svg": "/impsv2/static/media/impToken.64fd5b4fd18762f314ed748b421f32b9.svg",
     "static/media/mage.png": "/impsv2/static/media/mage.2f8954607c60d9cb0b98.png",
     "static/media/partner1.svg": "/impsv2/static/media/partner1.aae8cf7d75ac174971d8.svg",
+    "static/media/clanCastle.svg": "/impsv2/static/media/clanCastle.6514467580f551940c1614e205c7d148.svg",
     "static/media/anastasiya.png": "/impsv2/static/media/anastasiya.df3acaaaeb0b3b07ae11.png",
     "static/media/michael.png": "/impsv2/static/media/michael.351f249e1ca946023de3.png",
     "static/media/rostam.png": "/impsv2/static/media/rostam.c6ca8803c05956b8605f.png",
@@ -87,11 +89,11 @@
     "static/media/monitor.svg": "/impsv2/static/media/monitor.d890cf7762bd6e44df101c5b37ae46f8.svg",
     "static/media/CaretLeft.svg": "/impsv2/static/media/CaretLeft.0b45f71ad2557d555bcb.svg",
     "static/media/CaretRight.svg": "/impsv2/static/media/CaretRight.a3dd92a1e0e052216374.svg",
-    "main.4592a149.css.map": "/impsv2/static/css/main.4592a149.css.map",
-    "main.4f65c0c5.js.map": "/impsv2/static/js/main.4f65c0c5.js.map"
+    "main.30ae61ec.css.map": "/impsv2/static/css/main.30ae61ec.css.map",
+    "main.08c37bf1.js.map": "/impsv2/static/js/main.08c37bf1.js.map"
   },
   "entrypoints": [
-    "static/css/main.4592a149.css",
-    "static/js/main.4f65c0c5.js"
+    "static/css/main.30ae61ec.css",
+    "static/js/main.08c37bf1.js"
   ]
 }
