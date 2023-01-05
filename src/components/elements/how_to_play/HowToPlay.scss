@@ -49,20 +49,54 @@ $mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
       padding: 10px;
       width: 80px;
       height: 80px;
-      img {
-        max-width: 100%;
+      padding: 10px;
+      background: transparent;
+      border: 1px solid #333333;
+      &::before {
+        content: "";
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        border-radius: 12px;
+        width: 60px;
+        height: 60px;
+      }
+      &-warrior {
+        &::before {
+          background: url("../../../assets/heroes/warrior-icon-default.png") center / cover no-repeat;
+        }
+      }
+      &-rogue {
+        &::before {
+          background: url("../../../assets/heroes/rogue-icon-default.png") center / cover no-repeat;
+        }
+      }
+      &-mage {
+        &::before {
+          background: url("../../../assets/heroes/mage-icon-default.png") center / cover no-repeat;
+        }
       }
       &-active {
-        #{$playIcons}__item-warrior {
+        &#{$playIcons}__item-warrior {
+          &::before {
+            background: url("../../../assets/heroes/warrior-icon-active.png") center / cover no-repeat;
+          }
         }
 
-        #{$playIcons}__item-rogue {
+        &#{$playIcons}__item-rogue {
+          &::before {
+            background: url("../../../assets/heroes/rogue-icon-active.png") center / cover no-repeat;
+          }
         }
 
-        #{$playIcons}__item-mage {
+        &#{$playIcons}__item-mage {
+          &::before {
+            background: url("../../../assets/heroes/mage-icon-active.png") center / cover no-repeat;
+          }
         }
       }
       &:not(.play-icons__item-active) {
@@ -72,42 +106,6 @@ $mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
   }
   &__content {
     position: relative;
-  }
-  &__arrows {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  &__arrow {
-    width: 80px;
-    height: 80px;
-    background: rgba(46, 44, 44, 0.6);
-    border-radius: 24px;
-    position: relative;
-    cursor: pointer;
-    &::before {
-      content: "";
-      width: 60px;
-      height: 60px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-    &-prev {
-      &::before {
-        background: url("../../../assets/icons/CaretLeft.svg") center / cover no-repeat;
-      }
-    }
-    &-next {
-      &::before {
-        background: url("../../../assets/icons/CaretRight.svg") center / cover no-repeat;
-      }
-    }
   }
 
   &-slider {

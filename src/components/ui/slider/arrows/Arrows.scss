@@ -1,0 +1,36 @@
+.arrows {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    width: 80px;
+    height: 80px;
+    background: rgba(46, 44, 44, 0.6);
+    border-radius: 24px;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-prev {
+      &::before {
+        background: url("../../../../assets/icons/CaretLeft.svg") center / cover no-repeat;
+      }
+    }
+    &-next {
+      &::before {
+        background: url("../../../../assets/icons/CaretRight.svg") center / cover no-repeat;
+      }
+    }
+  }
+}

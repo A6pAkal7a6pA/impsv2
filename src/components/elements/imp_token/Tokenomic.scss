@@ -7,6 +7,11 @@
     margin-right: auto;
     padding: 60px 24px;
   }
+  .arrows {
+    top: 0;
+    transform: translate(0);
+    z-index: 2;
+  }
   &-switcher {
     display: flex;
     align-items: center;
@@ -26,6 +31,7 @@
       color: rgba(#ffffff, 0.6);
       position: relative;
       padding-bottom: 6px;
+      cursor: pointer;
       &:after {
         content: "";
         position: absolute;
@@ -44,7 +50,11 @@
     }
   }
   &-map {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
     &__inner {
+      position: relative;
     }
 
     &__separator {
