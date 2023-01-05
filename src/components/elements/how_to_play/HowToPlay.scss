@@ -4,6 +4,11 @@ $mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
 
 .play {
   &__inner {
+    max-width: 1328px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__subtitle {
@@ -34,6 +39,7 @@ $mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
     display: flex;
     align-items: center;
     justify-content: center;
+    $playIcons: &;
     gap: 24px;
     &__item {
       background: linear-gradient(143.97deg, rgba(27, 135, 181, 0.07) -17.08%, rgba(0, 0, 0, 0.03) 74.26%);
@@ -50,27 +56,71 @@ $mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
         object-fit: cover;
       }
       &-active {
-        .play-icons__item-warrior {
+        #{$playIcons}__item-warrior {
         }
 
-        .play-icons__item-rogue {
+        #{$playIcons}__item-rogue {
         }
 
-        .play-icons__item-mage {
+        #{$playIcons}__item-mage {
         }
+      }
+      &:not(.play-icons__item-active) {
+        cursor: pointer;
       }
     }
   }
+  &__content {
+    position: relative;
+  }
+  &__arrows {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__arrow {
+    width: 80px;
+    height: 80px;
+    background: rgba(46, 44, 44, 0.6);
+    border-radius: 24px;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-prev {
+      &::before {
+        background: url("../../../assets/icons/CaretLeft.svg") center / cover no-repeat;
+      }
+    }
+    &-next {
+      &::before {
+        background: url("../../../assets/icons/CaretRight.svg") center / cover no-repeat;
+      }
+    }
+  }
+
   &-slider {
     max-width: 1029px;
     width: 100%;
     &__slide {
       width: 448px;
-      height: 385px;
+      height: 540px;
       background-position: center;
       background-size: contain;
       position: relative;
       padding-top: 40px;
+      padding-bottom: 40px;
       &:not(.swiper-slide-visible) {
         opacity: 0;
       }
@@ -107,8 +157,31 @@ $mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
       max-width: 100%;
       object-fit: contain;
     }
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 80px;
+      height: 80px;
+      background: rgba(46, 44, 44, 0.6);
+      border-radius: 24px;
+      left: auto;
+      right: auto;
+      &:after {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        background-image: linear-gradient(152.08deg, #d4ab79 47.7%, #d9aa5e 168.73%);
+      }
+    }
+    .swiper-button-prev {
+      left: -16px;
+    }
+    .swiper-button-next {
+      right: -16px;
+    }
   }
   &-description {
+    $playDescription: &;
     &__inner {
       max-width: 1008px;
       margin-left: auto;
@@ -138,6 +211,16 @@ $mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+      text-transform: capitalize;
+      &-warrior {
+        background-image: $warrior;
+      }
+      &-rogue {
+        background-image: $rogue;
+      }
+      &-mage {
+        background-image: $mage;
+      }
     }
 
     &__text {

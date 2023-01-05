@@ -1,14 +1,16 @@
-import React, { useState } from 'react'
+import React, { useCallback, useRef, useState } from 'react'
 import warriorIconDefault from '../../../assets/heroes/warrior-icon-default.png'
 import rogueIconDefault from '../../../assets/heroes/rogue-icon-default.png'
 import mageIconDefault from '../../../assets/heroes/mage-icon-default.png'
 import warriorIconActive from '../../../assets/heroes/warrior-icon-active.png'
 import rogueIconActive from '../../../assets/heroes/rogue-icon-active.png'
 import mageIconActive from '../../../assets/heroes/mage-icon-active.png'
-import { EffectCoverflow } from 'swiper'
+import { EffectCoverflow, Navigation, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/scss'
 import 'swiper/scss/effect-coverflow'
+import 'swiper/scss/navigation'
+import 'swiper/scss/pagination'
 import warrior from '../../../assets/heroes/axe.png'
 import rogue from '../../../assets/heroes/rogue.png'
 import mage from '../../../assets/heroes/mage.png'
@@ -43,6 +45,7 @@ const persons = [
 
 export const HowToPlay = () => {
   const [person, setPerson] = useState('warrior')
+  const isActive = (personElement: string) => person === personElement
   return (
     <div className="play">
       <div className="play__inner">
@@ -52,61 +55,92 @@ export const HowToPlay = () => {
           {persons.map((el, index) => (
             <div
               key={index}
-              className={`play-icons__item play-icons__item-${person}_active`}
+              className={`play-icons__item${
+                isActive(el.person)
+                  ? ` play-icons__item-active play-icons__item-${person}_active`
+                  : ''
+              }`}
             >
-              <img src={el.iconImgDefault} alt={el.person} />
+              <img
+                src={isActive(el.person) ? el.iconImgActive : el.iconImgDefault}
+                alt={el.person}
+              />
             </div>
           ))}
         </div>
-
-        <Swiper
-          className="play-slider"
-          modules={[EffectCoverflow]}
-          effect={'coverflow'}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 430,
-            modifier: 1,
-            slideShadows: true
-          }}
-          slidesPerView="auto"
-          centeredSlides={true}
-          loop={true}
-          height={460}
-          watchSlidesProgress={true}
-        >
-          {persons.map((el, index) => (
-            <SwiperSlide
-              key={index}
-              className={`play-slider__slide play-slider__slide-${el.person}`}
-            >
-              <img
-                className="play-slider__slide-img"
-                src={el.mainImg}
-                alt={el.person}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-
-        <div className="play-description">
-          <div className="play-description__inner">
+        <div className="play__content">
+          <div className="play__arrows">
+            <div className="play__arrow play__arrow-prev"></div>
+            <div className="play__arrow play__arrow-next"></div>
+          </div>
+          <Swiper
+            className="play-slider"
+            modules={[EffectCoverflow, Navigation, Pagination]}
+            effect={'coverflow'}
+            navigation={{
+              prevEl: '.play__arrow-prev',
+              nextEl: '.play__arrow-next'
+            }}
+            pagination={{
+              clickable: true,
+              type: 'bullets',
+              bulletClass: '.play-icons__item',
+              el: '.play-icons__item'
+            }}
+            coverflowEffect={{
+              rotate: 0,
+              stretch: 0,
+              depth: 430,
+              modifier: 1,
+              slideShadows: true
+            }}
+            slidesPerView="auto"
+            centeredSlides={true}
+            loop={true}
+            height={540}
+            watchSlidesProgress={true}
+            onSlideChange={(swiper) =>
+              setPerson(persons[swiper.realIndex].person)
+            }
+          >
             {persons.map((el, index) => (
-              <div key={index} className="play-description__item">
-                <div className="play-description__title">
-                  <img
-                    src={el.iconImgDefault}
-                    alt={el.person}
-                    className="play-description__title-img"
-                  />
-                  <div className="play-description__title-text">
-                    {el.person}
-                  </div>
-                </div>
-                <div className="play-description__text">{el.description}</div>
-              </div>
+              <SwiperSlide
+                key={index}
+                className={`play-slider__slide play-slider__slide-${el.person}`}
+              >
+                <img
+                  className="play-slider__slide-img"
+                  src={el.mainImg}
+                  alt={el.person}
+                />
+              </SwiperSlide>
             ))}
+          </Swiper>
+
+          <div className="play-description">
+            <div className="play-description__inner">
+              {persons
+                .filter((el) => isActive(el.person))
+                .map((el, index) => (
+                  <div key={index} className="play-description__item">
+                    <div className="play-description__title">
+                      <img
+                        src={el.iconImgActive}
+                        alt={el.person}
+                        className="play-description__title-img"
+                      />
+                      <div
+                        className={`play-description__title-text play-description__title-text-${el.person}`}
+                      >
+                        {el.person}
+                      </div>
+                    </div>
+                    <div className="play-description__text">
+                      {el.description}
+                    </div>
+                  </div>
+                ))}
+            </div>
           </div>
         </div>
       </div>
