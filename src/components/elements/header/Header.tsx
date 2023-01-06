@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Logo } from '../../ui/logo/Logo'
 import { Navigation } from '../navigation/Navigation'
 import { Button } from '../../ui/button/Button'
 import ShareIcon from '../../../assets/icons/share.svg'
 import './Header.scss'
+import { useScrollPosition } from '../../../hooks'
 
 const info = {
   pitchDeckText: 'Pitch deck',
@@ -13,8 +14,9 @@ const info = {
 }
 
 export const Header = () => {
+  const scrollPosition = useScrollPosition()
   return (
-    <div className="header header-sticky">
+    <div className={`header${scrollPosition > 20 ? ' header-sticky' : ''}`}>
       <div className="header__inner">
         <Logo />
         <Navigation />

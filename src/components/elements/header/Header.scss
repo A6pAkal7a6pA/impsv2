@@ -6,6 +6,7 @@
   width: 100%;
   z-index: 10;
   &-sticky {
+    transition: background 0.5s;
     background: rgba(19, 18, 18, 0.6);
     backdrop-filter: blur(8px);
   }

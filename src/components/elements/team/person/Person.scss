@@ -15,7 +15,6 @@
       bottom: 24px;
     }
   }
-
   &__info {
     display: flex;
     flex-direction: column;
@@ -32,7 +31,6 @@
     line-height: 32px;
     color: #ffffff;
   }
-
   &__position {
     font-family: "Inter";
     font-weight: 700;
@@ -55,6 +53,7 @@
     &__item {
       padding-left: 16px;
       position: relative;
+      transition: all 0.5s;
       &::before {
         content: "";
         width: 4px;
@@ -68,7 +67,7 @@
       }
     }
   }
-  &-active {
+  &:hover {
     position: relative;
     .person__info {
       background: #16141a;
@@ -76,7 +75,6 @@
     }
     .person-description {
       padding: 0 24px 31px 24px;
-
       left: 0;
       width: 100%;
       background: #16141a;

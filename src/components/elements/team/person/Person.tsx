@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Person.scss'
 import linkedInImg from '../../../../assets/icons/linkedin.svg'
 
@@ -18,12 +18,7 @@ export const Person = ({
   photo
 }: PersonProps) => {
   return (
-    <a
-      href={linkedIn}
-      target="_blank"
-      className="person person-active"
-      rel="noreferrer"
-    >
+    <a href={linkedIn} target="_blank" className="person" rel="noreferrer">
       <div className="person__image">
         <img src={photo} alt="person" className="person__image-photo" />
         <img

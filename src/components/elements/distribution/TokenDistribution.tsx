@@ -6,8 +6,8 @@ import './TokenDistribution.scss'
 
 export const TokenDistribution = () => {
   return (
-    <div className="distribution">
-      <div className="distribution__inner">
+    <div className="distribution" id="Token_Distibution">
+      <div className="distribution__inner container">
         <Title color={Color.GOLD} text="Token Distibution" />
         <div className="distribution-total">
           <div className="distribution-total__title">Total Supply</div>

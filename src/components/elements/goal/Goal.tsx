@@ -49,7 +49,7 @@ const steps = [
 
 export const Goal = () => {
   return (
-    <div className="goal">
+    <div className="goal" id="The_goal">
       <div className="goal__inner">
         <div className="goal__subtitle">How to play</div>
         <Title color={Color.GOLD} text="The goal is the territory domination" />

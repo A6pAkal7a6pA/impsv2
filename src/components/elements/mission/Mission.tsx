@@ -9,8 +9,8 @@ import { Color, Title } from '../../ui/title/Title'
 
 export const Mission = () => {
   return (
-    <div className="mission" id="Our_missions">
-      <div className="mission__inner">
+    <section className="mission" id="Our_missions">
+      <div className="mission__inner container">
         <Title color={Color.GOLD} text="New blockchain and token are on" />
         <img className="mission__engine" src={oasis} alt="oasis" />
         <div className="mission-info">
@@ -76,6 +76,6 @@ export const Mission = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

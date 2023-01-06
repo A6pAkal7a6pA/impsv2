@@ -29,7 +29,7 @@ const tokenomic = [
 export const Tokenomic = () => {
   return (
     <div className="tokenomic">
-      <div className="tokenomic__inner">
+      <div className="tokenomic__inner container">
         <div className="tokenomic-switcher">
           <div className="tokenomic-switcher__item tokenomic-switcher__item-active">
             IMP Token

@@ -47,27 +47,11 @@ export const HowToPlay = () => {
   const [person, setPerson] = useState('warrior')
   const isActive = (personElement: string) => person === personElement
   return (
-    <div className="play">
-      <div className="play__inner">
+    <section className="play" id="Fearless">
+      <div className="play__inner container">
         <h4 className="play__subtitle">Your heroes are your pride! </h4>
         <h2 className="play__title"> Fearless imps with unrivaled skill.</h2>
-        <div className="play-icons">
-          {/* {persons.map((el, index) => (
-            <div
-              key={index}
-              className={`play-icons__item${
-                isActive(el.person)
-                  ? ` play-icons__item-active play-icons__item-${person}_active`
-                  : ''
-              }`}
-            >
-              <img
-                src={isActive(el.person) ? el.iconImgActive : el.iconImgDefault}
-                alt={el.person}
-              />
-            </div>
-          ))} */}
-        </div>
+        <div className="play-icons"></div>
         <div className="play__content">
           <Arrows />
           <Swiper
@@ -99,6 +83,7 @@ export const HowToPlay = () => {
             centeredSlides={true}
             loop={true}
             height={540}
+            grabCursor={true}
             watchSlidesProgress={true}
             onSlideChange={(swiper) => {
               setPerson(persons[swiper.realIndex].person)
@@ -145,6 +130,6 @@ export const HowToPlay = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

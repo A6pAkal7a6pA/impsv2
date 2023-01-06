@@ -64,8 +64,8 @@ const texts = [
 
 export const Expirience = () => {
   return (
-    <div className="expirience" id="Our">
-      <div className="expirience__inner">
+    <div className="expirience" id="Our_expirience">
+      <div className="expirience__inner container">
         <Title color={Color.BLUE} text="Our expirience" />
         <div className="expirience__subtitle">
           Besides the player’s skill, Token is the only opportunity to gain

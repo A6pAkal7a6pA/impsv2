@@ -3,10 +3,11 @@ import { Button } from '../../ui/button/Button'
 import { Partners } from '../partners/Partners'
 import './Intro.scss'
 import { PreTitle } from '../../ui/pre_title/PreTitle'
+import { PageBlockProps } from '../../../data'
 
-export const Intro = () => {
+export const Intro = ({ idName }: PageBlockProps) => {
   return (
-    <div className="intro" id="Home">
+    <section className="intro" id={idName}>
       <div className="intro__inner">
         <div className="intro__info">
           <PreTitle text="The first NFT" />
@@ -24,6 +25,6 @@ export const Intro = () => {
         </div>
       </div>
       <Partners />
-    </div>
+    </section>
   )
 }

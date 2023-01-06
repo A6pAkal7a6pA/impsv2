@@ -54,8 +54,8 @@ export const TokenAllocation = () => {
     return (100 * partialValue) / totalValue
   }
   return (
-    <div className="allocation">
-      <div className="allocation__inner">
+    <div className="allocation" id="Token_allocation">
+      <div className="allocation__inner container">
         <Title color={Color.BLUE} text="Token allocation" />
         <div className="allocation__subtitle">
           Highly qualified, expertized and energetic professionals with

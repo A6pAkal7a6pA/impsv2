@@ -2,22 +2,10 @@ import { Button } from '../../ui/button/Button'
 import { ModalItem } from './item/ModalItem'
 import { Socio } from '../socio/Socio'
 import './Modal.scss'
-
-const navigationMenu = [
-  'blockchain',
-  'IMP Token',
-  'Team',
-  'Fearless',
-  'Roadmap',
-  'Token allocation',
-  'The goal',
-  'Our expirience',
-  'Token Distibution'
-]
+import { navigationMenu } from '../../../data'
 
 export const Modal = () => {
   // const [modal, setModal] = useState(false)
-
   return (
     <div className="modal">
       <div className="modal__inner">

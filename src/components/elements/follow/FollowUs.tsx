@@ -6,7 +6,7 @@ import { Button } from '../../ui/button/Button'
 export const FollowUs = () => {
   return (
     <div className="follow">
-      <div className="follow__inner">
+      <div className="follow__inner container">
         <h2 className="follow__title">Follow Us</h2>
         <Socio withTitle={true} />
         <div className="follow__links">

@@ -14,14 +14,16 @@ import { Copyright } from './components/elements/copyright/Copyright'
 import { TokenDistribution } from './components/elements/distribution/TokenDistribution'
 import { Goal } from './components/elements/goal/Goal'
 import { Tokenomic } from './components/elements/imp_token/Tokenomic'
+import { Navbar } from './components/elements/navbar/Navbar'
 
 function App() {
   return (
     <div className="wrapper">
       <Attachment />
+      <Navbar />
       <Header />
-      <Intro />
       <Modal />
+      <Intro idName="Home" />
       <Mission />
       <HowToPlay />
       <Goal />

@@ -112,7 +112,7 @@ const persons = [
 
 export const Team = () => {
   return (
-    <div className="team">
+    <div className="team" id="team">
       <div className="team__inner">
         <Title color={Color.GOLD} text="Team" />
         <div className="team__people">

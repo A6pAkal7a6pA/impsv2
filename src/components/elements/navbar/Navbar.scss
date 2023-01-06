@@ -1,0 +1,47 @@
+.navbar {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  &__inner {
+  }
+
+  &__item {
+    padding-right: 27px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &::before {
+      content: "";
+      width: 3px;
+      height: 3px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #fff;
+      border-radius: 50%;
+      opacity: 1;
+    }
+    span {
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      opacity: 0;
+    }
+    &-active {
+      &::before {
+        background:#96764B;
+        height: 100%;
+        border-radius: 3px;
+      }
+      span {
+        opacity: 1;
+      }
+    }
+  }
+}

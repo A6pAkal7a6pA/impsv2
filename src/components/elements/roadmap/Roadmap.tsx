@@ -164,7 +164,7 @@ const roadMap = [
 
 export const Roadmap = () => {
   return (
-    <div className="road">
+    <div className="road" id="Roadmap">
       <div className="road__inner">
         <Title color={Color.GOLD} text="Roadmap" />
         <div className="road__years">
