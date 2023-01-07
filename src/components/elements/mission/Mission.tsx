@@ -6,10 +6,11 @@ import mobile from '../../../assets/availabiles//DeviceMobileSpeaker.svg'
 import browser from '../../../assets/availabiles/Browser.svg'
 import './Mission.scss'
 import { Color, Title } from '../../ui/title/Title'
+import { SectionProps } from '../../../data'
 
-export const Mission = () => {
+export const Mission = ({ idName }: SectionProps) => {
   return (
-    <section className="mission" id="Our_missions">
+    <section className="mission" id={idName}>
       <div className="mission__inner container">
         <Title color={Color.GOLD} text="New blockchain and token are on" />
         <img className="mission__engine" src={oasis} alt="oasis" />

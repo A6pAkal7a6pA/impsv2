@@ -5,6 +5,7 @@ import allodsImg from '../../../assets/expirience/games/gm1.png'
 import shattleImg from '../../../assets/expirience/games/gm2.png'
 import skyForgeImg from '../../../assets/expirience/games/gm3.png'
 import untoldImg from '../../../assets/expirience/games/gm4.png'
+import { SectionProps } from '../../../data'
 
 const importAll = (context: __WebpackModuleApi.RequireContext) => {
   const images: string[] = []
@@ -62,7 +63,7 @@ const texts = [
   'In-house development'
 ]
 
-export const Expirience = () => {
+export const Expirience = ({ idName }: SectionProps) => {
   return (
     <div className="expirience" id="Our_expirience">
       <div className="expirience__inner container">

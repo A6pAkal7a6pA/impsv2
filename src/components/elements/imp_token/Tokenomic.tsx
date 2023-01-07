@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper'
 import 'swiper/scss'
 import { Arrows } from '../../ui/slider/arrows/Arrows'
+import { SectionProps } from '../../../data'
 
 const tokenomic = [
   {
@@ -26,9 +27,9 @@ const tokenomic = [
   }
 ]
 
-export const Tokenomic = () => {
+export const Tokenomic = ({ idName }: SectionProps) => {
   return (
-    <div className="tokenomic">
+    <section className="tokenomic" id={idName}>
       <div className="tokenomic__inner container">
         <div className="tokenomic-switcher">
           <div className="tokenomic-switcher__item tokenomic-switcher__item-active">
@@ -83,6 +84,6 @@ export const Tokenomic = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

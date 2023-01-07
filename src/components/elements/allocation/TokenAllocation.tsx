@@ -1,6 +1,7 @@
 import React from 'react'
 import { Color, Title } from '../../ui/title/Title'
 import './TokenAllocation.scss'
+import { SectionProps } from '../../../data'
 
 const info = [
   {
@@ -45,7 +46,7 @@ const info = [
   }
 ]
 
-export const TokenAllocation = () => {
+export const TokenAllocation = ({ idName }: SectionProps) => {
   const total = info.reduce(
     (accumulator, currentValue) => accumulator + currentValue.amount,
     0
@@ -54,7 +55,7 @@ export const TokenAllocation = () => {
     return (100 * partialValue) / totalValue
   }
   return (
-    <div className="allocation" id="Token_allocation">
+    <section className="allocation" id={idName}>
       <div className="allocation__inner container">
         <Title color={Color.BLUE} text="Token allocation" />
         <div className="allocation__subtitle">
@@ -97,6 +98,6 @@ export const TokenAllocation = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }

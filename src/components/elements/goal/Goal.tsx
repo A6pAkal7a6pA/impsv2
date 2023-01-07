@@ -8,6 +8,7 @@ import stepImg5 from '../../../assets/goal/goal5.png'
 import stepImg6 from '../../../assets/goal/goal6.png'
 import stepImg7 from '../../../assets/goal/goal7.png'
 import './Goal.scss'
+import { SectionProps } from '../../../data'
 
 const steps = [
   {
@@ -47,9 +48,9 @@ const steps = [
   }
 ]
 
-export const Goal = () => {
+export const Goal = ({ idName }: SectionProps) => {
   return (
-    <div className="goal" id="The_goal">
+    <section className="goal" id={idName}>
       <div className="goal__inner">
         <div className="goal__subtitle">How to play</div>
         <Title color={Color.GOLD} text="The goal is the territory domination" />
@@ -88,12 +89,6 @@ export const Goal = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
-
-//(7 - index) <= steps.legth
-//7 - 2
-//7 - 3
-
-//1  7

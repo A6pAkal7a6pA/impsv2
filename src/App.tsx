@@ -20,21 +20,21 @@ function App() {
   return (
     <div className="wrapper">
       <Attachment />
-      <Navbar />
       <Header />
       <Modal />
       <Intro idName="Home" />
-      <Mission />
-      <HowToPlay />
-      <Goal />
-      <Tokenomic />
-      <Roadmap />
-      <Expirience />
-      <Team />
-      <TokenAllocation />
-      <TokenDistribution />
+      <Mission idName="Blockchain" />
+      <HowToPlay idName="Fearless" />
+      <Goal idName="The_goal" />
+      <Tokenomic idName="IMP_Token" />
+      <Roadmap idName="Roadmap" />
+      <Expirience idName="Our_expirience" />
+      <Team idName="Team" />
+      <TokenAllocation idName="Token_allocation" />
+      <TokenDistribution idName="Token_Distibution" />
       <FollowUs />
       <Copyright />
+      <Navbar />
     </div>
   )
 }

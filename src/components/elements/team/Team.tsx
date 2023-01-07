@@ -10,6 +10,7 @@ import ROSTAM_PHOTO from '../../../assets/team/rostam.png'
 import ANASTASIA_PHOTO from '../../../assets/team/anastasiya.png'
 import GEORGE_PHOTO from '../../../assets/team/egor.png'
 import './Team.scss'
+import { SectionProps } from '../../../data'
 
 const persons = [
   {
@@ -110,9 +111,9 @@ const persons = [
   }
 ]
 
-export const Team = () => {
+export const Team = ({ idName }: SectionProps) => {
   return (
-    <div className="team" id="team">
+    <section className="team" id={idName}>
       <div className="team__inner">
         <Title color={Color.GOLD} text="Team" />
         <div className="team__people">
@@ -128,6 +129,6 @@ export const Team = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }

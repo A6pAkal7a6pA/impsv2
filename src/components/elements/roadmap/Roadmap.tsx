@@ -24,6 +24,7 @@ import roadmapImg22 from '../../../assets/roadmap/road22.png'
 import { RoadYear } from './item/RoadYear'
 import './Roadmap.scss'
 import { Color, Title } from '../../ui/title/Title'
+import { SectionProps } from '../../../data'
 
 const roadMap = [
   {
@@ -162,9 +163,9 @@ const roadMap = [
   }
 ]
 
-export const Roadmap = () => {
+export const Roadmap = ({ idName }: SectionProps) => {
   return (
-    <div className="road" id="Roadmap">
+    <section className="road" id={idName}>
       <div className="road__inner">
         <Title color={Color.GOLD} text="Roadmap" />
         <div className="road__years">
@@ -178,6 +179,6 @@ export const Roadmap = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }

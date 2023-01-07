@@ -15,6 +15,7 @@ import rogue from '../../../assets/heroes/rogue.png'
 import mage from '../../../assets/heroes/mage.png'
 import './HowToPlay.scss'
 import { Arrows } from '../../ui/slider/arrows/Arrows'
+import { SectionProps } from '../../../data'
 
 const persons = [
   {
@@ -43,11 +44,11 @@ const persons = [
   }
 ]
 
-export const HowToPlay = () => {
+export const HowToPlay = ({ idName }: SectionProps) => {
   const [person, setPerson] = useState('warrior')
   const isActive = (personElement: string) => person === personElement
   return (
-    <section className="play" id="Fearless">
+    <section className="play" id={idName}>
       <div className="play__inner container">
         <h4 className="play__subtitle">Your heroes are your pride! </h4>
         <h2 className="play__title"> Fearless imps with unrivaled skill.</h2>

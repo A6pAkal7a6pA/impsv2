@@ -3,9 +3,9 @@ import { Button } from '../../ui/button/Button'
 import { Partners } from '../partners/Partners'
 import './Intro.scss'
 import { PreTitle } from '../../ui/pre_title/PreTitle'
-import { PageBlockProps } from '../../../data'
+import { SectionProps } from '../../../data'
 
-export const Intro = ({ idName }: PageBlockProps) => {
+export const Intro = ({ idName }: SectionProps) => {
   return (
     <section className="intro" id={idName}>
       <div className="intro__inner">

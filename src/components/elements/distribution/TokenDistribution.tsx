@@ -3,10 +3,11 @@ import { Color, Title } from '../../ui/title/Title'
 import distributionImage from '../../../assets/distribution.svg'
 import { Button } from '../../ui/button/Button'
 import './TokenDistribution.scss'
+import { SectionProps } from '../../../data'
 
-export const TokenDistribution = () => {
+export const TokenDistribution = ({ idName }: SectionProps) => {
   return (
-    <div className="distribution" id="Token_Distibution">
+    <section className="distribution" id={idName}>
       <div className="distribution__inner container">
         <Title color={Color.GOLD} text="Token Distibution" />
         <div className="distribution-total">
@@ -23,6 +24,6 @@ export const TokenDistribution = () => {
         <div className="distribution__separator"></div>
         <Button link="#" text="Open full Tokenomics" />
       </div>
-    </div>
+    </section>
   )
 }

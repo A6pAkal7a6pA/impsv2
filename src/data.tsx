@@ -1,6 +1,6 @@
 export const navigationMenu = [
   'Home',
-  'blockchain',
+  'Blockchain',
   'IMP Token',
   'Team',
   'Fearless',
@@ -11,6 +11,6 @@ export const navigationMenu = [
   'Token Distibution'
 ]
 
-export interface PageBlockProps {
+export interface SectionProps {
   idName: string
 }
