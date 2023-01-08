@@ -5,13 +5,7 @@ import { Button } from '../../ui/button/Button'
 import ShareIcon from '../../../assets/icons/share.svg'
 import './Header.scss'
 import { useScrollPosition } from '../../../hooks'
-
-const info = {
-  pitchDeckText: 'Pitch deck',
-  pitchDeckLink: '#',
-  whitePaperText: 'White paper',
-  whitePaperLink: '#'
-}
+import { links } from '../../../data'
 
 export const Header = () => {
   const scrollPosition = useScrollPosition()
@@ -21,8 +15,8 @@ export const Header = () => {
         <Logo />
         <Navigation />
         <div className="header__info">
-          <Button link={info.pitchDeckLink} text={info.pitchDeckText} />
-          <Button link={info.whitePaperLink} text={info.whitePaperText} />
+          <Button link={links.pitchDeck} text="Pitch deck" />
+          <Button link={links.whitePapper} text="White paper" />
           <a href="#Follow_Us" className="header__contact">
             Contact
           </a>

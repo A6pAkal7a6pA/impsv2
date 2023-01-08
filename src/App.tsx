@@ -17,6 +17,7 @@ import { Tokenomic } from './components/elements/imp_token/Tokenomic'
 import { Navbar } from './components/elements/navbar/Navbar'
 
 function App() {
+  const isOpen = false
   return (
     <div className="wrapper">
       <Attachment />

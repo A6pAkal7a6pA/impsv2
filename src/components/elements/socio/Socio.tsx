@@ -8,46 +8,47 @@ import bitcoinTalkImg from '../../../assets/icons/socio/bittalk.svg'
 import facebookImg from '../../../assets/icons/socio/facebook.svg'
 import redditImg from '../../../assets/icons/socio/reddit.svg'
 import './Socio.scss'
+import { links } from '../../../data'
 
 const socio = [
   {
     title: 'Twitter',
-    link: '#',
+    link: links.twitter,
     imgSrc: twitterImg
   },
   {
     title: 'Announcement Channel',
-    link: '#',
+    link: links.telegramChanel,
     imgSrc: telegramImg
   },
   {
     title: 'Discord',
-    link: '#',
+    link: links.discord,
     imgSrc: discordImg
   },
   {
     title: 'Telegram Chat',
-    link: '#',
+    link: links.telegramChat,
     imgSrc: telegramImg
   },
   {
     title: 'Medium',
-    link: '#',
+    link: links.medium,
     imgSrc: mediumImg
   },
   {
     title: 'BitcoinTalk',
-    link: '#',
+    link: links.bitcoinTalk,
     imgSrc: bitcoinTalkImg
   },
   {
     title: 'Facebook',
-    link: '#',
+    link: links.facebook,
     imgSrc: facebookImg
   },
   {
     title: 'Reddit',
-    link: '#',
+    link: links.reddit,
     imgSrc: redditImg
   }
 ]

@@ -1,18 +1,19 @@
 import React from 'react'
 import './Copyright.scss'
+import { links } from '../../../data'
 
 export const Copyright = () => {
   return (
     <div className="copy">
       <div className="copy__inner">
         <div className="copy__links">
-          <a href="#" className="copy__link">
+          <a href={links.legalNoticeDisclaimers} className="copy__link">
             Legal Notice & Disclaimers
           </a>
-          <a href="#" className="copy__link">
+          <a href={links.privacyPolicy} className="copy__link">
             Privacy policy
           </a>
-          <a href="#" className="copy__link">
+          <a href={links.contacts} className="copy__link">
             Contacts
           </a>
         </div>

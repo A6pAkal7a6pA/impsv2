@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavigationItem } from './item/NavigationItem'
 import './Navigation.scss'
 
@@ -24,7 +24,13 @@ const menu = [
 export const Navigation = () => {
   return (
     <nav className="menu">
-      <div className="menu__burger">
+      <div
+        onClick={() => {
+          document.querySelector('.modal')?.classList.add('modal-active')
+          document.body.style.overflow = 'hidden'
+        }}
+        className="menu__burger"
+      >
         <span></span>
       </div>
       <ul className="menu__list">

@@ -32,5 +32,19 @@
         background: url("../../../../assets/icons/CaretRight.svg") center / cover no-repeat;
       }
     }
+    &:hover {
+      border: 1px solid rgba(46, 44, 44, 0.6);
+      background: transparent;
+      &.arrows__item-prev {
+        &::before {
+          background: url("../../../../assets/icons/CaretLeft-white.svg") center / cover no-repeat;
+        }
+      }
+      &.arrows__item-next {
+        &::before {
+          background: url("../../../../assets/icons/CaretRight-white.svg") center / cover no-repeat;
+        }
+      }
+    }
   }
 }

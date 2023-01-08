@@ -10,7 +10,7 @@
   z-index: 10;
   overflow-y: auto;
   display: none;
-  .-active {
+  &-active {
     display: block;
   }
   &__inner {
@@ -88,7 +88,7 @@
 
   &__body {
   }
-
+  //TODO
   &__body-title {
     background: linear-gradient(152.08deg, #d4ab79 47.7%, #d9aa5e 168.73%);
     -webkit-background-clip: text;
@@ -107,6 +107,20 @@
     flex-wrap: wrap;
     max-width: 900px;
   }
+  &__item {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    &:hover {
+      background: linear-gradient(152.08deg, #d4ab79 47.7%, #d9aa5e 168.73%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
   &-footer {
     display: flex;
     align-items: center;
@@ -115,7 +129,7 @@
     }
 
     &__link {
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
       font-weight: 800;
       font-size: 16px;
       line-height: 32px;
