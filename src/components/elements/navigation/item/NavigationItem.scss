@@ -1,12 +1,27 @@
 .menu {
   &__item {
-
+    position: relative;
+    &::after {
+      content: "";
+      width: 80%;
+      height: 2px;
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: transparent;
+    }
+    &-active {
+      &::after {
+        background: #96764b;
+      }
+    }
   }
   &__link {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }

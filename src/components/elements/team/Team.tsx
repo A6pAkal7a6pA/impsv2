@@ -114,7 +114,7 @@ const persons = [
 export const Team = ({ idName }: SectionProps) => {
   return (
     <section className="team" id={idName}>
-      <div className="team__inner">
+      <div className="team__inner container">
         <Title color={Color.GOLD} text="Team" />
         <div className="team__people">
           {persons.map((person, index) => (

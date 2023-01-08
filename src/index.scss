@@ -86,10 +86,12 @@ h6 {
 
 a {
   font-family: $fontfamilyPopins;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
   position: relative;
+  overflow: hidden;
 }
 .container {
   max-width: 1328px;

@@ -78,7 +78,7 @@ export const HowToPlay = ({ idName }: SectionProps) => {
               stretch: 0,
               depth: 430,
               modifier: 1,
-              slideShadows: true
+              slideShadows: false
             }}
             slidesPerView="auto"
             centeredSlides={true}

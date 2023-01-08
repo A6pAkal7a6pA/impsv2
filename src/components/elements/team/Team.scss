@@ -1,11 +1,20 @@
 .team {
-  margin-bottom: 240px;
+  padding-top: 144px;
   &__inner {
-    max-width: 1328px;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    padding-bottom: 96px;
+    &::before {
+      content: "";
+      width: 100%;
+      background: linear-gradient(136.32deg, #f99f2f 16.32%, #6959b1 85.53%);
+      opacity: 0.1;
+      filter: blur(235.137px);
+      height: 1273.5px;
+      position: absolute;
+      left: 0;
+      top: -162px;
+      z-index: -1;
+    }
   }
   .title {
     margin-bottom: 64px;

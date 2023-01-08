@@ -1,10 +1,37 @@
 .road {
+  padding-top: 144px;
   &__inner {
     max-width: 1328px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+    &::before {
+      background: #2980d0;
+      opacity: 0.15;
+      filter: blur(150px);
+      transform: rotate(-45deg);
+      height: 819.6425030622596px;
+      width: 719.2118407185571px;
+      left: -450px;
+      top: -50px;
+    }
+    &::after {
+      background: #f59902;
+      opacity: 0.1;
+      filter: blur(150px);
+      right: -630px;
+      bottom: -116px;
+      height: 468px;
+      width: 908px;
+    }
   }
   .title {
     margin-bottom: 85px;

@@ -23,7 +23,9 @@ export const Header = () => {
         <div className="header__info">
           <Button link={info.pitchDeckLink} text={info.pitchDeckText} />
           <Button link={info.whitePaperLink} text={info.whitePaperText} />
-          <div className="header__text">Contact</div>
+          <a href="#Follow_Us" className="header__contact">
+            Contact
+          </a>
           <div className="header__share">
             <img src={ShareIcon} alt="share" />
           </div>

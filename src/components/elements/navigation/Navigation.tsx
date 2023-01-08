@@ -2,7 +2,24 @@ import React from 'react'
 import { NavigationItem } from './item/NavigationItem'
 import './Navigation.scss'
 
-const menu = ['Home', 'Our missions', 'How to play', 'Roadmap']
+const menu = [
+  {
+    title: 'Home',
+    link: 'Home'
+  },
+  {
+    title: 'Our missions',
+    link: 'Blockchain'
+  },
+  {
+    title: 'How to play',
+    link: 'Fearless'
+  },
+  {
+    title: 'Roadmap',
+    link: 'Roadmap'
+  }
+]
 
 export const Navigation = () => {
   return (
@@ -11,8 +28,8 @@ export const Navigation = () => {
         <span></span>
       </div>
       <ul className="menu__list">
-        {menu.map((title, index) => (
-          <NavigationItem title={title} key={index} />
+        {menu.map((item, index) => (
+          <NavigationItem title={item.title} link={item.link} key={index} />
         ))}
       </ul>
     </nav>

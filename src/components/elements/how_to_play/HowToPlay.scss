@@ -3,8 +3,34 @@ $rogue: linear-gradient(123.98deg, #30ca72 30.32%, #429841 106.48%);
 $mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
 
 .play {
+  padding-top: 144px;
+  padding-bottom: 74px;
   &__inner {
-    padding-bottom: 218px;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      filter: blur(150px);
+      opacity: 0.15;
+    }
+    &::before {
+      background: #c5332d;
+      width: 906px;
+      height: 468px;
+      left: 0;
+      bottom: -144px;
+      z-index: -1;
+    }
+    &::after {
+      background: #726b62;
+      height: 1010.2646921827122px;
+      width: 886.4770966449968px;
+      right: -250px;
+      top: -230px;
+      z-index: -1;
+      transform: rotate(-45deg);
+    }
   }
 
   &__subtitle {

@@ -33,10 +33,27 @@ function App() {
       <TokenAllocation idName="Token_allocation" />
       <TokenDistribution idName="Token_Distibution" />
       <FollowUs />
-      <Copyright />
       <Navbar />
     </div>
   )
 }
+function anchorTransition() {
+  for (const anchor of document.querySelectorAll('a[href*="#"]')) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+      // document.body.classList.remove('disabled')
+      // document.querySelector('.header')?.classList.remove('active')
+      const blockID = anchor.getAttribute('href')?.substr(1)
+      console.log(blockID)
+      if (blockID === undefined) return
+
+      document.getElementById(blockID)?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    })
+  }
+}
+anchorTransition()
 
 export default App

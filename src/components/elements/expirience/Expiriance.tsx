@@ -65,7 +65,7 @@ const texts = [
 
 export const Expirience = ({ idName }: SectionProps) => {
   return (
-    <div className="expirience" id="Our_expirience">
+    <section className="expirience" id="Our_expirience">
       <div className="expirience__inner container">
         <Title color={Color.BLUE} text="Our expirience" />
         <div className="expirience__subtitle">
@@ -118,6 +118,6 @@ export const Expirience = ({ idName }: SectionProps) => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
