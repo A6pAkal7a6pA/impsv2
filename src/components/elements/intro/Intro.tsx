@@ -3,12 +3,16 @@ import { Button } from '../../ui/button/Button'
 import { Partners } from '../partners/Partners'
 import './Intro.scss'
 import { PreTitle } from '../../ui/pre_title/PreTitle'
-import { SectionProps } from '../../../data'
+import { SectionProps, links } from '../../../data'
+import bg from '../../../assets/main-druid.png'
 
 export const Intro = ({ idName }: SectionProps) => {
   return (
     <section className="intro" id={idName}>
       <div className="intro__inner">
+        <div className="intro__bg">
+          <img src={bg} alt="bg" className="intro__bg-img" />
+        </div>
         <div className="intro__info">
           <PreTitle text="The first NFT" />
           <div className="intro__title">Play-to-Earn WAR Strategy Game</div>
@@ -18,8 +22,8 @@ export const Intro = ({ idName }: SectionProps) => {
               Follow our comunity and stay tuned:
             </div>
             <div className="intro-comunity__buttons">
-              <Button link="#" text="Telegram" />
-              <Button link="#" text="Twitter" />
+              <Button link={links.telegramChanel} text="Telegram" />
+              <Button link={links.twitter} text="Twitter" />
             </div>
           </div>
         </div>

@@ -113,7 +113,7 @@ const persons = [
 
 export const Team = ({ idName }: SectionProps) => {
   return (
-    <section className="team" id={idName}>
+    <section className="team" id={idName} data-aos="fade-up">
       <div className="team__inner container">
         <Title color={Color.GOLD} text="Team" />
         <div className="team__people">

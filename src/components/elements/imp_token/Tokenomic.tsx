@@ -29,7 +29,7 @@ const tokenomic = [
 
 export const Tokenomic = ({ idName }: SectionProps) => {
   return (
-    <section className="tokenomic" id={idName}>
+    <section className="tokenomic" data-aos="fade-up" id={idName}>
       <div className="tokenomic__inner container">
         <div className="tokenomic-switcher">
           <div className="tokenomic-switcher__item tokenomic-switcher__item-active">

@@ -10,7 +10,7 @@ import { SectionProps } from '../../../data'
 
 export const Mission = ({ idName }: SectionProps) => {
   return (
-    <section className="mission" id={idName}>
+    <section className="mission" data-aos="fade-up" id={idName}>
       <div className="mission__inner container">
         <Title color={Color.GOLD} text="New blockchain and token are on" />
         <img className="mission__engine" src={oasis} alt="oasis" />

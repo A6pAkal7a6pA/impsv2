@@ -36,4 +36,31 @@
       width: 160px;
     }
   }
+  &__share {
+    display: none;
+  }
+  @media (max-width: 1280px) {
+    &__inner {
+      gap: 50px;
+    }
+  }
+  @media (max-width: 1154px) {
+    &__contact,
+    &__share {
+      display: none;
+    }
+  }
+  @media (max-width: 1015px) {
+    &__info {
+      display: none;
+    }
+  }
+  @media (max-width: 670px) {
+    &__inner {
+      justify-content: space-between;
+    }
+  }
+  @media (max-width: 500px) {
+    padding: 25px 0;
+  }
 }

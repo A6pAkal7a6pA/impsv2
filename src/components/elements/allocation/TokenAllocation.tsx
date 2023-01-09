@@ -55,7 +55,7 @@ export const TokenAllocation = ({ idName }: SectionProps) => {
     return (100 * partialValue) / totalValue
   }
   return (
-    <section className="allocation" id={idName}>
+    <section className="allocation" id={idName} data-aos="fade-up">
       <div className="allocation__inner container">
         <Title color={Color.BLUE} text="Token allocation" />
         <div className="allocation__subtitle">

@@ -14,9 +14,6 @@
     display: block;
   }
   &__inner {
-    max-width: 1328px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 173.5px 24px;
     display: flex;
     flex-direction: column;
@@ -108,11 +105,6 @@
     max-width: 900px;
   }
   &__item {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 48px;
-    letter-spacing: 0.02em;
-    color: #ffffff;
     &:hover {
       background: linear-gradient(152.08deg, #d4ab79 47.7%, #d9aa5e 168.73%);
       -webkit-background-clip: text;
@@ -134,6 +126,126 @@
       font-size: 16px;
       line-height: 32px;
       color: #fff;
+    }
+  }
+  .socio {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    &__link {
+      min-width: 146px;
+      max-width: 146px;
+      height: 100px;
+    }
+  }
+  @media (max-height: 1085px) {
+    &__inner {
+      padding: 100px 24px;
+    }
+  }
+  @media (max-height: 939px) {
+    &__inner {
+      padding: 50px 24px;
+    }
+  }
+  @media (max-height: 839px) {
+    &__inner {
+      padding: 24px;
+    }
+  }
+  @media (max-height: 786px) {
+    &__inner {
+      gap: 50px;
+    }
+  }
+  @media (max-height: 686px) {
+    &__inner {
+      gap: 25px;
+    }
+  }
+  @media (max-width: 1330px) {
+    &__link {
+      font-size: 25px;
+      line-height: 40px;
+    }
+    &__head-title {
+      font-size: 55px;
+      line-height: 68px;
+    }
+  }
+  @media (max-width: 936px) {
+    &__head-title {
+      font-size: 45px;
+      line-height: 57px;
+    }
+    &__link {
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+  @media (max-width: 874px) {
+    &__close,
+    &-footer {
+      justify-content: center;
+    }
+    &__head {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+  @media (max-width: 685px) {
+    .socio,
+    &__head-title {
+      display: none;
+    }
+    &__list {
+      gap: 8px;
+    }
+    &__item {
+      max-width: none;
+      border: 1px solid rgba(102, 102, 102, 0.2);
+      border-radius: 8px;
+      padding: 28px;
+      text-align: center;
+      flex: 1 1 33.333%;
+    }
+    &__link {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__close {
+      order: 1;
+    }
+    &__body {
+      order: 2;
+    }
+    &__head {
+      order: 3;
+    }
+    &-footer {
+      display: none;
+    }
+    &__inner {
+      padding: 52px 24px;
+    }
+  }
+  @media (max-width: 575px) {
+    .button-green {
+      display: none;
+    }
+    .button {
+      width: 100%;
+    }
+    &__buttons {
+      width: 100%;
+      flex-direction: column;
+      gap: 8px;
+    }
+    &__item {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      padding: 28px 3px;
     }
   }
 }

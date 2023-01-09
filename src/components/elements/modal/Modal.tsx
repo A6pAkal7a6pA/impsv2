@@ -7,7 +7,7 @@ import { links, navigationMenu } from '../../../data'
 export const Modal = () => {
   return (
     <div className="modal">
-      <div className="modal__inner">
+      <div className="modal__inner container">
         <div
           onClick={() => {
             document.querySelector('.modal')?.classList.remove('modal-active')

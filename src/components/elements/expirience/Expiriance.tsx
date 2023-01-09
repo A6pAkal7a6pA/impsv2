@@ -65,7 +65,7 @@ const texts = [
 
 export const Expirience = ({ idName }: SectionProps) => {
   return (
-    <section className="expirience" id="Our_expirience">
+    <section className="expirience" id="Our_expirience" data-aos="fade-up">
       <div className="expirience__inner container">
         <Title color={Color.BLUE} text="Our expirience" />
         <div className="expirience__subtitle">

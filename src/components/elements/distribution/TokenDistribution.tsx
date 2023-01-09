@@ -7,7 +7,7 @@ import { SectionProps } from '../../../data'
 
 export const TokenDistribution = ({ idName }: SectionProps) => {
   return (
-    <section className="distribution" id={idName}>
+    <section className="distribution" id={idName} data-aos="fade-up">
       <div className="distribution__inner container">
         <Title color={Color.GOLD} text="Token Distibution" />
         <div className="distribution-total">

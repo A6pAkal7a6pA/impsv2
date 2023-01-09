@@ -10,14 +10,15 @@ import { Team } from './components/elements/team/Team'
 import { TokenAllocation } from './components/elements/allocation/TokenAllocation'
 import { Roadmap } from './components/elements/roadmap/Roadmap'
 import { FollowUs } from './components/elements/follow/FollowUs'
-import { Copyright } from './components/elements/copyright/Copyright'
 import { TokenDistribution } from './components/elements/distribution/TokenDistribution'
 import { Goal } from './components/elements/goal/Goal'
 import { Tokenomic } from './components/elements/imp_token/Tokenomic'
 import { Navbar } from './components/elements/navbar/Navbar'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function App() {
-  const isOpen = false
+  AOS.init()
   return (
     <div className="wrapper">
       <Attachment />
@@ -42,8 +43,6 @@ function anchorTransition() {
   for (const anchor of document.querySelectorAll('a[href*="#"]')) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault()
-      // document.body.classList.remove('disabled')
-      // document.querySelector('.header')?.classList.remove('active')
       const blockID = anchor.getAttribute('href')?.substr(1)
       console.log(blockID)
       if (blockID === undefined) return

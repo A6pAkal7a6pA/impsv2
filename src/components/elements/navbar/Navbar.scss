@@ -38,7 +38,7 @@
     }
     &-active {
       &::before {
-        background:#96764B;
+        background: #96764b;
         height: 100%;
         border-radius: 3px;
       }
@@ -46,5 +46,8 @@
         opacity: 1;
       }
     }
+  }
+  @media (max-width: 500px) {
+    display: none;
   }
 }

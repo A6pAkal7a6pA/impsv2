@@ -165,7 +165,7 @@ const roadMap = [
 
 export const Roadmap = ({ idName }: SectionProps) => {
   return (
-    <section className="road" id={idName}>
+    <section className="road" id={idName} data-aos="fade-up">
       <div className="road__inner">
         <Title color={Color.GOLD} text="Roadmap" />
         <div className="road__years">

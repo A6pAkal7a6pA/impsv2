@@ -44,4 +44,31 @@
     align-items: center;
     gap: 16px;
   }
+  @media (max-width: 670px) {
+    flex-grow: 0;
+    &__burger {
+      width: 44px;
+      height: 32px;
+      &::before {
+        width: 18.33333396911621px;
+        top: 10px;
+      }
+      span {
+        width: 29.333332061767578px;
+        top: 15px;
+      }
+      &::after {
+        width: 44px;
+        top: 20px;
+      }
+    }
+    &__list {
+      display: none;
+    }
+  }
+  @media (max-width: 500px) {
+    &__logo {
+      max-height: 30px;
+    }
+  }
 }

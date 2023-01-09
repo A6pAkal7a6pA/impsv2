@@ -7,7 +7,7 @@ import { links } from '../../../data'
 
 export const FollowUs = () => {
   return (
-    <div className="follow" id="Follow_Us">
+    <div className="follow" id="Follow_Us" data-aos="fade-up">
       <div className="follow__inner container">
         <h2 className="follow__title">Follow Us</h2>
         <Socio withTitle={true} />

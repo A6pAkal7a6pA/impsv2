@@ -48,7 +48,7 @@ export const HowToPlay = ({ idName }: SectionProps) => {
   const [person, setPerson] = useState('warrior')
   const isActive = (personElement: string) => person === personElement
   return (
-    <section className="play" id={idName}>
+    <section className="play" id={idName} data-aos="fade-up">
       <div className="play__inner container">
         <h4 className="play__subtitle">Your heroes are your pride! </h4>
         <h2 className="play__title"> Fearless imps with unrivaled skill.</h2>
