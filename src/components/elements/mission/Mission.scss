@@ -1,5 +1,5 @@
 .mission {
-  padding: 138px 0 0 0;
+  padding: 138px 24px 0 24px;
   position: relative;
   &::before {
     content: "";
@@ -29,63 +29,117 @@
   &__engine {
     margin-bottom: 112px;
   }
-}
-.mission-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 112px;
-  &__item {
-    font-family: "Inter";
-    padding: 24px;
-    max-width: 280px;
-    width: 100%;
-  }
-
-  &__title {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 32px;
-    padding-bottom: 24px;
-    margin-bottom: 24px;
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 112px;
+    &__item {
+      font-family: "Inter";
+      padding: 24px;
+      max-width: 280px;
       width: 100%;
-      height: 3px;
-      background: linear-gradient(82.77deg, #fbf6cd 5.38%, #f99f2f 21.58%, #fbf6cd 44.75%);
-      border-radius: 20px;
+    }
+
+    &__title {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 32px;
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(82.77deg, #fbf6cd 5.38%, #f99f2f 21.58%, #fbf6cd 44.75%);
+        border-radius: 20px;
+      }
+    }
+
+    &__text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      color: rgba(#ffffff, 0.6);
     }
   }
+  &-available {
+    &__title {
+      font-family: "Inter";
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: -0.019em;
+      margin-bottom: 33px;
+    }
+    &__items {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    &__item {
+    }
 
-  &__text {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    color: rgba(#ffffff, 0.6);
+    &__img {
+    }
   }
-}
-.mission-available {
-  &__title {
-    font-family: "Inter";
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    letter-spacing: -0.019em;
-    margin-bottom: 33px;
+  @media (max-width: 1200px) {
+    &__engine {
+      margin-bottom: 50px;
+    }
+    .title {
+      font-size: 54px;
+      line-height: 54px;
+    }
+    &-info {
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      &__item {
+        min-width: 327px;
+        max-width: 50%;
+        width: 100%;
+      }
+    }
   }
-  &__items {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+  @media (max-width: 865px) {
+    &__inner {
+      padding: 60px 40px;
+    }
   }
-  &__item {
+  @media (max-width: 785px) {
+    &__inner {
+      padding: 40px 24px;
+    }
   }
-
-  &__img {
+  @media (max-width: 750px) {
+    &__inner {
+      background: none;
+      padding: 0;
+    }
+  }
+  @media (max-width: 702px) {
+    padding: 50px 24px 0 24px;
+    &-info {
+      gap: 24px;
+      &__item {
+        padding: 0;
+        min-width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .title {
+      font-size: 40px;
+    }
+    &__engine,
+    &-info {
+      margin-bottom: 40px;
+    }
   }
 }

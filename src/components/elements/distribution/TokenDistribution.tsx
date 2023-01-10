@@ -15,11 +15,13 @@ export const TokenDistribution = ({ idName }: SectionProps) => {
           <div className="distribution-total__number">3,000,000,000</div>
         </div>
         <div className="distribution__image">
-          <img
-            src={distributionImage}
-            alt="distribution"
-            className="distribution__image-img"
-          />
+          <div className="distribution__image-inner">
+            <img
+              src={distributionImage}
+              alt="distribution"
+              className="distribution__image-img"
+            />
+          </div>
         </div>
         <div className="distribution__separator"></div>
         <Button link="#" text="Open full Tokenomics" />

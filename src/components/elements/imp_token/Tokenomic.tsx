@@ -53,9 +53,17 @@ export const Tokenomic = ({ idName }: SectionProps) => {
             }}
             modules={[Navigation, Pagination]}
             loop
+            loopedSlides={1}
+            slidesPerView={1}
             navigation={{
               prevEl: '.tokenomic .arrows__item-prev',
               nextEl: '.tokenomic .arrows__item-next'
+            }}
+            allowTouchMove={false}
+            breakpoints={{
+              758: {
+                allowTouchMove: true
+              }
             }}
           >
             <Arrows />

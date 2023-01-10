@@ -5,6 +5,7 @@ $yellow: linear-gradient(152.08deg, #d4ab79 47.7%, #d9aa5e 168.73%);
 
 .road-year {
   $rootParent: &;
+  width: 302px;
   &-brown {
     #{$rootParent}__number,
     #{$rootParent}__items::before,

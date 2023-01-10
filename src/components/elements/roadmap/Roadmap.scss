@@ -1,11 +1,7 @@
 .road {
   padding-top: 144px;
   &__inner {
-    max-width: 1328px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 24px;
-    padding-right: 24px;
+    width: 100%;
     position: relative;
     &::before,
     &::after {
@@ -38,9 +34,32 @@
   }
 
   &__years {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 24px;
+    overflow-x: auto;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      gap: 24px;
+      overflow-x: auto;
+      width: 1280px;
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
+      &::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+    }
+  }
+  @media (max-width: 1330px) {
+    &__inner {
+      padding: 0;
+    }
+    &__years {
+      padding-left: 24px;
+    }
   }
 }

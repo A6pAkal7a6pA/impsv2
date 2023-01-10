@@ -166,17 +166,19 @@ const roadMap = [
 export const Roadmap = ({ idName }: SectionProps) => {
   return (
     <section className="road" id={idName} data-aos="fade-up">
-      <div className="road__inner">
+      <div className="road__inner container">
         <Title color={Color.GOLD} text="Roadmap" />
         <div className="road__years">
-          {roadMap.map((yearMap, index) => (
-            <RoadYear
-              key={index}
-              year={yearMap.year}
-              months={yearMap.months}
-              color={yearMap.color}
-            />
-          ))}
+          <div className="road__years-inner">
+            {roadMap.map((yearMap, index) => (
+              <RoadYear
+                key={index}
+                year={yearMap.year}
+                months={yearMap.months}
+                color={yearMap.color}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

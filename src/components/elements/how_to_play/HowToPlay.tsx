@@ -16,6 +16,7 @@ import mage from '../../../assets/heroes/mage.png'
 import './HowToPlay.scss'
 import { Arrows } from '../../ui/slider/arrows/Arrows'
 import { SectionProps } from '../../../data'
+import { Color, Title } from '../../ui/title/Title'
 
 const persons = [
   {
@@ -51,7 +52,7 @@ export const HowToPlay = ({ idName }: SectionProps) => {
     <section className="play" id={idName} data-aos="fade-up">
       <div className="play__inner container">
         <h4 className="play__subtitle">Your heroes are your pride! </h4>
-        <h2 className="play__title"> Fearless imps with unrivaled skill.</h2>
+        <Title text="Fearless imps with unrivaled skill." color={Color.BLUE} />
         <div className="play-icons"></div>
         <div className="play__content">
           <Arrows />

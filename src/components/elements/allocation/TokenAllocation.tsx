@@ -79,23 +79,25 @@ export const TokenAllocation = ({ idName }: SectionProps) => {
           </div>
         </div>
         <div className="allocation-graph">
-          {info.map((item, index) => (
-            <div key={index} className="allocation-graph__item">
-              <div className="allocation-graph__column">
-                <div className="allocation-graph__number">
-                  {`${percentage(item.amount, total).toFixed(1)}%`}
+          <div className="allocation-graph__inner">
+            {info.map((item, index) => (
+              <div key={index} className="allocation-graph__item">
+                <div className="allocation-graph__column">
+                  <div className="allocation-graph__number">
+                    {`${percentage(item.amount, total).toFixed(1)}%`}
+                  </div>
+                  <div
+                    className="allocation-graph__column-filled"
+                    style={{
+                      height: `${percentage(item.amount, total).toFixed(1)}%`
+                    }}
+                  ></div>
                 </div>
-                <div
-                  className="allocation-graph__column-filled"
-                  style={{
-                    height: `${percentage(item.amount, total).toFixed(1)}%`
-                  }}
-                ></div>
+                <div className="allocation-graph__amount">{`${item.amount}kk`}</div>
+                <div className="allocation-graph__name">{item.name}</div>
               </div>
-              <div className="allocation-graph__amount">{`${item.amount}kk`}</div>
-              <div className="allocation-graph__name">{item.name}</div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
