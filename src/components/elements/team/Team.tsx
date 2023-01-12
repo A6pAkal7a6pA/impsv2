@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Color, Title } from '../../ui/title/Title'
-import { Person } from './person/Person'
+import { PersonProps } from './person/Person'
 import IGOR_PHOTO from '../../../assets/team/igor.png'
 import ELIAS_PHOTO from '../../../assets/team/elias.png'
 import MIKE_PHOTO from '../../../assets/team/mike.png'
@@ -11,8 +11,12 @@ import ANASTASIA_PHOTO from '../../../assets/team/anastasiya.png'
 import GEORGE_PHOTO from '../../../assets/team/egor.png'
 import './Team.scss'
 import { SectionProps } from '../../../data'
+import 'swiper/scss'
+import 'swiper/scss/effect-coverflow'
+import { BlockTeamList } from './list/BlockTeamList'
+import { SliderTeamList } from './list/SliderTeamList'
 
-const persons = [
+export const persons: PersonProps[] = [
   {
     name: 'Igor',
     position: 'CEO, Co-founder',
@@ -112,22 +116,17 @@ const persons = [
 ]
 
 export const Team = ({ idName }: SectionProps) => {
+  const desktop = window.matchMedia('(min-width: 769px)')
+  const [isDesktop, setIsDesktop] = useState(true)
+  useEffect(() => {
+    window.addEventListener('load', () => setIsDesktop(desktop.matches))
+    window.addEventListener('resize', () => setIsDesktop(desktop.matches))
+  }, [desktop.matches, isDesktop])
   return (
     <section className="team" id={idName} data-aos="fade-up">
       <div className="team__inner container">
         <Title color={Color.GOLD} text="Team" />
-        <div className="team__people">
-          {persons.map((person, index) => (
-            <Person
-              key={index}
-              linkedIn={person.linkedIn}
-              name={person.name}
-              position={person.position}
-              photo={person.photo}
-              descriptions={person.descriptions}
-            />
-          ))}
-        </div>
+        {isDesktop ? <BlockTeamList /> : <SliderTeamList />}
       </div>
     </section>
   )

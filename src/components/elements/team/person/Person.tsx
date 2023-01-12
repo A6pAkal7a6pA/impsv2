@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Person.scss'
 import linkedInImg from '../../../../assets/icons/linkedin.svg'
 
-interface PersonProps {
+export interface PersonProps {
   name: string
   position: string
   linkedIn: string

@@ -22,5 +22,19 @@
   }
 
   &__description {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffffff;
+  }
+  @media (max-width: 500px) {
+    &__links {
+      width: 100%;
+      align-items: flex-start;
+      flex-direction: column;
+    }
   }
 }

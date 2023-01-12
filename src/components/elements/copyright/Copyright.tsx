@@ -5,7 +5,7 @@ import { links } from '../../../data'
 export const Copyright = () => {
   return (
     <div className="copy">
-      <div className="copy__inner">
+      <div className="copy__inner container">
         <div className="copy__links">
           <a href={links.legalNoticeDisclaimers} className="copy__link">
             Legal Notice & Disclaimers

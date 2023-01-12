@@ -11,6 +11,7 @@ export const FollowUs = () => {
       <div className="follow__inner container">
         <h2 className="follow__title">Follow Us</h2>
         <Socio withTitle={true} />
+        <div className="follow__separator"></div>
         <div className="follow__links">
           <Button link={links.pitchDeck} text="Pitch deck" />
           <Button link={links.whitePapper} text="White paper" />

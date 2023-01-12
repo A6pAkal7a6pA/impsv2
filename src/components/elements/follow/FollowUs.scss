@@ -17,13 +17,22 @@
   }
   .socio {
     margin-bottom: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
     &__link {
-      max-width: 139px;
-      width: 100%;
+      width: 139px;
       height: 114px;
     }
   }
-
+  &__separator {
+    display: none;
+    height: 2.63px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) -6.48%, #ffffff 45.65%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.4;
+    border-radius: 17.5156px;
+  }
   &__links {
     max-width: 344px;
     display: flex;
@@ -32,6 +41,35 @@
     .button {
       max-width: 160px;
       width: 100%;
+    }
+  }
+  @media (max-width: 800px) {
+    background: none;
+    &__inner {
+      margin-bottom: 40px;
+    }
+    &__title {
+      font-size: 40px;
+    }
+    .socio {
+      margin-bottom: 0;
+      &__link {
+        background: none;
+      }
+    }
+    &__separator {
+      display: block;
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+  }
+  @media (max-width: 500px) {
+    &__links {
+      max-width: 100%;
+      gap: 24px;
+      .button {
+        max-width: 100%;
+      }
     }
   }
 }
