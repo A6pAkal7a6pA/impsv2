@@ -84,4 +84,44 @@
       top: 100%;
     }
   }
+  @media (max-width: 768px) {
+    background: rgba(56, 56, 56, 0.3);
+    border-radius: 24px;
+    max-width: 260px;
+    &__name {
+      font-size: 28px;
+      line-height: 32px;
+    }
+    &__position {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    &-description {
+      position: relative;
+      opacity: 1;
+      background: none;
+    }
+    &__info {
+      background: #262626;
+      padding: 24px 24px 64px 24px;
+      border-radius: 0 0 24px 24px;
+    }
+    &:hover {
+      position: relative;
+      .person__info {
+        background: #262626;
+        box-shadow: none;
+      }
+      .person-description {
+        padding: 0;
+        width: 100%;
+        background: none;
+        box-shadow: none;
+        border-radius: 0;
+        opacity: 1;
+        top: auto;
+        left: auto;
+      }
+    }
+  }
 }

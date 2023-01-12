@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+  .team {
+
+    &__people {
+    }
+  
+    &__slide {
+      max-width: 258px;
+      &-prev,
+      &-next {
+        opacity: 0.2;
+      }
+      &:not(.team__slide-prev, .team__slide-active, .team__slide-next) {
+        opacity: 0;
+      }
+    }
+  }
+}
+

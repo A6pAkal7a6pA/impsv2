@@ -3,6 +3,7 @@ import { EffectCoverflow } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Person } from '../person/Person'
 import { persons } from '../Team'
+import './SliderTeamList.scss'
 
 export const SliderTeamList = () => {
   return (
@@ -13,14 +14,18 @@ export const SliderTeamList = () => {
       coverflowEffect={{
         rotate: 0,
         stretch: 0,
-        depth: 430,
+        depth: 180,
         modifier: 1,
         slideShadows: false
       }}
+      spaceBetween={40}
       slidesPerView="auto"
       centeredSlides={true}
       loop={true}
       grabCursor={true}
+      slidePrevClass="team__slide-prev"
+      slideNextClass="team__slide-next"
+      slideActiveClass="team__slide-active"
     >
       {persons.map((person, index) => (
         <SwiperSlide className="team__slide" key={index}>
