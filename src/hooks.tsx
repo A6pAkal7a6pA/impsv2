@@ -30,3 +30,5 @@ export const useIntersection = (
   }, [element, rootMargin])
   return isVisible
 }
+
+// const pointRef = useRef<(HTMLDivElement | null)[]>([])

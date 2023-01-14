@@ -123,7 +123,7 @@ $colors: (
         background: url("../../../assets/goal/monetka.png") center / cover no-repeat;
         opacity: 0.1;
         &-active {
-          transition: all 5s;
+          transition: opacity 0.5s;
           opacity: 1;
         }
       }

@@ -10,6 +10,7 @@ import stepImg7 from '../../../assets/goal/goal7.png'
 import './Goal.scss'
 import { SectionProps } from '../../../data'
 import { useIntersection } from '../../../hooks'
+import { MutableRefObject } from 'react'
 
 const steps = [
   {
@@ -51,11 +52,22 @@ const steps = [
 
 export const Goal = ({ idName }: SectionProps) => {
   const ref = useRef() as React.MutableRefObject<HTMLInputElement>
-  const pointRef = useRef<(HTMLDivElement | null)[]>([])
+  const pointsRef = useRef<(HTMLDivElement | null)[]>([])
   const isVisible = useIntersection(ref, '0px')
+
   useEffect(() => {
-    console.log(pointRef)
-  })
+    pointsRef.current.forEach((el, i) => {
+      if (el === null) return
+      let index = 0
+      setInterval(() => {
+        if (index <= steps.length - (steps.length - i)) {
+          console.log('hi')
+          el.children[index].classList.add('goal-road-item__point-active')
+        }
+        index++
+      }, 1000)
+    })
+  }, [pointsRef])
   return (
     <section className="goal" id={idName} data-aos="fade-up">
       <div className="goal__inner">
@@ -76,21 +88,12 @@ export const Goal = ({ idName }: SectionProps) => {
                   />
                 </div>
                 <div className="goal-road-item__content">
-                  <div className="goal-road-item__points">
+                  <div
+                    ref={(el) => pointsRef.current.push(el)}
+                    className="goal-road-item__points"
+                  >
                     {steps.map((_, index) => (
-                      <div
-                        key={index}
-                        ref={(ref) => {
-                          pointRef.current.push(ref)
-                        }}
-                        className={`goal-road-item__point${
-                          isVisible
-                            ? index <= steps.length - (steps.length - i)
-                              ? ' goal-road-item__point-active'
-                              : ''
-                            : ''
-                        }`}
-                      ></div>
+                      <div key={index} className="goal-road-item__point"></div>
                     ))}
                   </div>
                   <div className="goal-road-item__title">{`Step ${i + 1}`}</div>
