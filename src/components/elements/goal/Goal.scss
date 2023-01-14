@@ -122,6 +122,7 @@ $colors: (
         height: 24px;
         background: url("../../../assets/goal/monetka.png") center / cover no-repeat;
         opacity: 0.1;
+        transition: opacity 1s;
         &-active {
           opacity: 1;
         }

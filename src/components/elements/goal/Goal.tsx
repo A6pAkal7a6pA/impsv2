@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Color, Title } from '../../ui/title/Title'
 import stepImg1 from '../../../assets/goal/goal1.png'
 import stepImg2 from '../../../assets/goal/goal2.png'
@@ -49,6 +49,11 @@ const steps = [
 ]
 
 export const Goal = ({ idName }: SectionProps) => {
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      console.log()
+    })
+  }, [])
   return (
     <section className="goal" id={idName} data-aos="fade-up">
       <div className="goal__inner">
@@ -73,9 +78,9 @@ export const Goal = ({ idName }: SectionProps) => {
                     {steps.map((_, index) => (
                       <div
                         key={index}
-                        className={`goal-road-item__point ${
+                        className={`goal-road-item__point${
                           index <= steps.length - (steps.length - i)
-                            ? 'goal-road-item__point-active'
+                            ? ' goal-road-item__point-active'
                             : ''
                         }`}
                       ></div>
