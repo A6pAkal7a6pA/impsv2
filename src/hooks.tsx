@@ -12,3 +12,21 @@ export const useScrollPosition = () => {
   }, [])
   return scrollPosition
 }
+
+export const useIntersection = (
+  element: React.MutableRefObject<HTMLInputElement>,
+  rootMargin: string
+) => {
+  const [isVisible, setState] = useState(false)
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setState(entry.isIntersecting)
+      },
+      { rootMargin }
+    )
+    element.current && observer.observe(element.current)
+    return () => observer.unobserve(element.current)
+  }, [element, rootMargin])
+  return isVisible
+}

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Color, Title } from '../../ui/title/Title'
 import stepImg1 from '../../../assets/goal/goal1.png'
 import stepImg2 from '../../../assets/goal/goal2.png'
@@ -9,6 +9,7 @@ import stepImg6 from '../../../assets/goal/goal6.png'
 import stepImg7 from '../../../assets/goal/goal7.png'
 import './Goal.scss'
 import { SectionProps } from '../../../data'
+import { useIntersection } from '../../../hooks'
 
 const steps = [
   {
@@ -49,17 +50,18 @@ const steps = [
 ]
 
 export const Goal = ({ idName }: SectionProps) => {
+  const ref = useRef() as React.MutableRefObject<HTMLInputElement>
+  const pointRef = useRef<(HTMLDivElement | null)[]>([])
+  const isVisible = useIntersection(ref, '0px')
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      console.log()
-    })
-  }, [])
+    console.log(pointRef)
+  })
   return (
     <section className="goal" id={idName} data-aos="fade-up">
       <div className="goal__inner">
         <div className="goal__subtitle">How to play</div>
         <Title color={Color.GOLD} text="The goal is the territory domination" />
-        <div className="goal-road">
+        <div ref={ref} className="goal-road">
           {steps.map((step, i) => (
             <div
               key={i}
@@ -78,9 +80,14 @@ export const Goal = ({ idName }: SectionProps) => {
                     {steps.map((_, index) => (
                       <div
                         key={index}
+                        ref={(ref) => {
+                          pointRef.current.push(ref)
+                        }}
                         className={`goal-road-item__point${
-                          index <= steps.length - (steps.length - i)
-                            ? ' goal-road-item__point-active'
+                          isVisible
+                            ? index <= steps.length - (steps.length - i)
+                              ? ' goal-road-item__point-active'
+                              : ''
                             : ''
                         }`}
                       ></div>

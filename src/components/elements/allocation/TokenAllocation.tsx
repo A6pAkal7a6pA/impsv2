@@ -3,6 +3,7 @@ import { Color, Title } from '../../ui/title/Title'
 import './TokenAllocation.scss'
 import { SectionProps } from '../../../data'
 import { log } from 'console'
+import { useIntersection } from '../../../hooks'
 
 const info = [
   {
@@ -47,36 +48,9 @@ const info = [
   }
 ]
 
-const useIntersection = (element: any, rootMargin: any) => {
-  const [isVisible, setState] = useState(false)
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setState(entry.isIntersecting)
-      },
-      { rootMargin }
-    )
-    element.current && observer.observe(element.current)
-    return () => observer.unobserve(element.current)
-  }, [])
-  return isVisible
-}
-
 export const TokenAllocation = ({ idName }: SectionProps) => {
-  const [isViewport, setIsViewport] = useState(false)
   const ref = useRef() as React.MutableRefObject<HTMLInputElement>
-  console.log(useIntersection(ref, '0px'))
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      const block = document.querySelector('.allocation')
-      const blockTop = block?.getBoundingClientRect().top
-      const blockHeight = block?.getBoundingClientRect().height
-      if (blockTop === undefined) return
-      if (blockHeight === undefined) return
-      setIsViewport(blockTop < 0 && 0 < blockTop + blockHeight)
-      console.log(ref)
-    })
-  }, [])
+  const isVisible = useIntersection(ref, '0px')
   const total = info.reduce(
     (accumulator, currentValue) => accumulator + currentValue.amount,
     0
@@ -116,14 +90,16 @@ export const TokenAllocation = ({ idName }: SectionProps) => {
                   <div className="allocation-graph__number">
                     {`${percentage(item.amount, total).toFixed(1)}%`}
                   </div>
-                  {isViewport && (
-                    <div
-                      className="allocation-graph__column-filled"
-                      style={{
-                        height: `${percentage(item.amount, total).toFixed(1)}%`
-                      }}
-                    ></div>
-                  )}
+                  <div
+                    className="allocation-graph__column-filled"
+                    style={{
+                      height: `${
+                        isVisible
+                          ? percentage(item.amount, total).toFixed(1)
+                          : 0
+                      }%`
+                    }}
+                  ></div>
                 </div>
                 <div className="allocation-graph__amount">{`${item.amount}kk`}</div>
                 <div className="allocation-graph__name">{item.name}</div>

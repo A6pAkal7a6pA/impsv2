@@ -108,15 +108,14 @@
 
     &__column-filled {
       position: absolute;
-      transition: all 1s;
       left: 0;
       bottom: 0;
       width: 100%;
-      height: 20%;
       background: linear-gradient(138.83deg, #aee3f9 39.38%, #41b3cc 115.64%);
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
       border-radius: 16px;
       transform: rotate(-180deg);
+      transition: height 4s;
     }
 
     &__amount {
