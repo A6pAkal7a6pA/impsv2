@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import { Logo } from '../../ui/logo/Logo'
 import { Navigation } from '../navigation/Navigation'
 import { Button } from '../../ui/button/Button'

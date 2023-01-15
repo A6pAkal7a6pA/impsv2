@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { NavigationItem } from './item/NavigationItem'
 import './Navigation.scss'
 

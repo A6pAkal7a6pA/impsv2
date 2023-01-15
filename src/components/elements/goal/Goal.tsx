@@ -52,7 +52,7 @@ const steps = [
 export const Goal = ({ idName }: SectionProps) => {
   const ref = useRef() as React.MutableRefObject<HTMLInputElement>
   const pointsRef = useRef<(HTMLDivElement | null)[]>([])
-  const isVisible = useIntersection(ref, '0px')
+  // const isVisible = useIntersection(ref, '0px')
 
   useEffect(() => {
     pointsRef.current.forEach((el, i) => {

@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import { Color, Title } from '../../ui/title/Title'
 import './TokenAllocation.scss'
 import { SectionProps } from '../../../data'
-import { log } from 'console'
 import { useIntersection } from '../../../hooks'
 
 const info = [

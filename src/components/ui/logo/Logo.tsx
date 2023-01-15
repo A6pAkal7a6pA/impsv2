@@ -4,7 +4,7 @@ import './Logo.scss'
 
 export const Logo = () => {
   return (
-    <a className="logo">
+    <a href="#Home" className="logo">
       <img className="logo-img" src={logo} alt="logo" />
     </a>
   )
