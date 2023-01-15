@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/impsv2/static/css/main.c03a31f4.css",
-    "main.js": "/impsv2/static/js/main.4e0873ea.js",
+    "main.js": "/impsv2/static/js/main.f98bfee2.js",
     "static/media/main-druid.png": "/impsv2/static/media/main-druid.983e7f99021852157797.png",
     "static/media/gameVault.svg": "/impsv2/static/media/gameVault.594d5b261b4f024f08b72bb3a5bfb1d0.svg",
     "static/media/mage-bg.png": "/impsv2/static/media/mage-bg.24a31b1c456565d2871f.png",
@@ -29,7 +29,6 @@
     "static/media/goal7.png": "/impsv2/static/media/goal7.15590e27d2d523162966.png",
     "static/media/michail.png": "/impsv2/static/media/michail.6cb8f761af4225892c59.png",
     "static/media/telegram.svg": "/impsv2/static/media/telegram.326cfd6ccf074d3f12ee2d18030cb7f4.svg",
-    "static/media/bittalk.svg": "/impsv2/static/media/bittalk.bf00fec289f1c93d48fbfbe12db1b399.svg",
     "static/media/road20.png": "/impsv2/static/media/road20.fde22d66720ae245700f.png",
     "static/media/oasis.svg": "/impsv2/static/media/oasis.9eaffa25f4a377aa6ed80042d199c87c.svg",
     "static/media/distribution.svg": "/impsv2/static/media/distribution.cd7b49c7949fc76c840064176fbd8357.svg",
@@ -75,12 +74,10 @@
     "static/media/exp5.svg": "/impsv2/static/media/exp5.c3d218d3724f32c68f5f.svg",
     "static/media/partner2.svg": "/impsv2/static/media/partner2.ea138fe3772777131f33.svg",
     "static/media/partner3.svg": "/impsv2/static/media/partner3.dea92e774f8e27cba29a.svg",
-    "static/media/reddit.svg": "/impsv2/static/media/reddit.d06e313a8f7ec36e88def8a2dad2008e.svg",
     "static/media/discord.svg": "/impsv2/static/media/discord.53a94c4b3e76238b8287e385385ef116.svg",
     "static/media/linkedin.svg": "/impsv2/static/media/linkedin.df0e76a98bb91419eeec90e4be9f195f.svg",
     "index.html": "/impsv2/index.html",
     "static/media/twitter.svg": "/impsv2/static/media/twitter.db2fa57e49afe7103ef27eb89717f295.svg",
-    "static/media/facebook.svg": "/impsv2/static/media/facebook.d8e3140e86c63940dc849ada8496d1f7.svg",
     "static/media/share.svg": "/impsv2/static/media/share.2ab256abba9be11a40418af0a7c25b5c.svg",
     "static/media/medium.svg": "/impsv2/static/media/medium.7c5517ad71e1f4755c79b5778c1b0d0b.svg",
     "static/media/DeviceTabletCamera.svg": "/impsv2/static/media/DeviceTabletCamera.8675e6087587023435d5d3b86abf1c46.svg",
@@ -92,10 +89,10 @@
     "static/media/CaretLeft-white.svg": "/impsv2/static/media/CaretLeft-white.c662ce24800589014a80.svg",
     "static/media/CaretRight-white.svg": "/impsv2/static/media/CaretRight-white.7253a6ead391cc859975.svg",
     "main.c03a31f4.css.map": "/impsv2/static/css/main.c03a31f4.css.map",
-    "main.4e0873ea.js.map": "/impsv2/static/js/main.4e0873ea.js.map"
+    "main.f98bfee2.js.map": "/impsv2/static/js/main.f98bfee2.js.map"
   },
   "entrypoints": [
     "static/css/main.c03a31f4.css",
-    "static/js/main.4e0873ea.js"
+    "static/js/main.f98bfee2.js"
   ]
 }
