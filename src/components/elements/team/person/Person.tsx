@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import './Person.scss'
 import linkedInImg from '../../../../assets/icons/linkedin.svg'
 
