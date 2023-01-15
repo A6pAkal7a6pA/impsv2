@@ -134,6 +134,17 @@
     }
   }
   @media (max-width: 500px) {
+    padding-top: 40px;
+    &__inner {
+      background: none;
+      padding-top: 0;
+    }
+    &__items {
+      padding: 0 40px;
+    }
+    &__item {
+      max-width: 100%;
+    }
     &__company {
       max-width: 151.5px;
     }

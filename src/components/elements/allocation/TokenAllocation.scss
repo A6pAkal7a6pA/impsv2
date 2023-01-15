@@ -168,4 +168,20 @@
       }
     }
   }
+  @media (max-width: 500px) {
+    padding-top: 40px;
+    .title,
+    &__subtitle {
+      padding: 0 24px;
+    }
+    &-price {
+      margin-bottom: 24px;
+    }
+    &-graph {
+      &__column {
+        height: 263px;
+        width: 130px;
+      }
+    }
+  }
 }

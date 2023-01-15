@@ -7,11 +7,11 @@ export const Copyright = () => {
     <div className="copy">
       <div className="copy__inner container">
         <div className="copy__links">
-          <a href={links.legalNoticeDisclaimers} className="copy__link">
-            Legal Notice & Disclaimers
+          <a href={links.licenseAgreement} className="copy__link">
+            License Agreement
           </a>
-          <a href={links.privacyPolicy} className="copy__link">
-            Privacy policy
+          <a href={links.indemnityAgreement} className="copy__link">
+            Indemnity Agreement
           </a>
           <a href={links.contacts} className="copy__link">
             Contacts

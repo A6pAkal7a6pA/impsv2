@@ -7,12 +7,27 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  // max-width: 1618px;
   padding-left: 24px;
   padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
-  display: none;
   .prize {
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+  @media (max-width: 1330px) {
+    position: absolute;
+    top: 131px;
+    bottom: auto;
+    .adviser {
+      display: none;
+    }
+  }
+  @media (max-width: 500px) {
+    .prize {
+      max-width: 98px;
+    }
   }
 }

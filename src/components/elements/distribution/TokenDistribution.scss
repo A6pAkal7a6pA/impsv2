@@ -98,6 +98,8 @@
     }
   }
   @media (max-width: 550px) {
+    padding-top: 80px;
+    margin-bottom: 0;
     &__inner {
       padding-top: 0;
       background: none;
@@ -106,6 +108,7 @@
       width: calc(100% - 48px);
       max-width: 100%;
       flex-direction: column;
+      gap: 20px;
     }
     &__separator,
     .button {

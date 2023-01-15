@@ -31,4 +31,10 @@
   &__slide {
     max-width: 288px;
   }
+  @media (max-width: 500px) {
+    padding-top: 40px;
+    &__inner {
+      padding-bottom: 0;
+    }
+  }
 }

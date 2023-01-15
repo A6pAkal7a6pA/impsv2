@@ -4,7 +4,6 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 5;
-  display: none;
   &__inner {
   }
 
@@ -48,7 +47,20 @@
       }
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 1630px) {
+    &__item {
+      span {
+        display: none;
+      }
+      &:hover {
+        span {
+          display: block;
+          position: absolute;
+        }
+      }
+    }
+  }
+  @media (max-width: 1500px) {
     display: none;
   }
 }

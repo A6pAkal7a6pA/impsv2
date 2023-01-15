@@ -38,16 +38,13 @@ export const Modal = () => {
         <Socio />
         <div className="modal-footer">
           <div className="modal-footer__item">
-            <a
-              href={links.legalNoticeDisclaimers}
-              className="modal-footer__link"
-            >
-              Legal Notice & Disclaimers
+            <a href={links.licenseAgreement} className="modal-footer__link">
+              License agreement
             </a>
           </div>
           <div className="modal-footer__item">
-            <a href={links.privacyPolicy} className="modal-footer__link">
-              Privacy policy
+            <a href={links.indemnityAgreement} className="modal-footer__link">
+              Indemnity Agreement
             </a>
           </div>
           <div className="modal-footer__item">

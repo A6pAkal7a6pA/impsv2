@@ -10,7 +10,6 @@ import stepImg7 from '../../../assets/goal/goal7.png'
 import './Goal.scss'
 import { SectionProps } from '../../../data'
 import { useIntersection } from '../../../hooks'
-import { MutableRefObject } from 'react'
 
 const steps = [
   {

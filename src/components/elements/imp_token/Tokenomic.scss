@@ -183,6 +183,9 @@
       }
     }
   }
+  @media (max-width: 500px) {
+    padding-top: 80px;
+  }
   @media (max-width: 418px) {
     &-map__separator {
       width: calc(100% - 48px);

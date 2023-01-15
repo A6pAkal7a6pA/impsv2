@@ -7,7 +7,7 @@ export interface PersonProps {
   position: string
   linkedIn: string
   photo: string
-  descriptions: string[]
+  descriptions?: string[]
 }
 
 export const Person = ({
@@ -31,7 +31,7 @@ export const Person = ({
         <div className="person__name">{name}</div>
         <div className="person__position">{position}</div>
         <ul className="person-description">
-          {descriptions.map((description, index) => (
+          {descriptions?.map((description, index) => (
             <li key={index} className="person-description__item">
               {description}
             </li>
