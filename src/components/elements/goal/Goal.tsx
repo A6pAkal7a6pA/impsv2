@@ -9,7 +9,6 @@ import stepImg6 from '../../../assets/goal/goal6.png'
 import stepImg7 from '../../../assets/goal/goal7.png'
 import './Goal.scss'
 import { SectionProps } from '../../../data'
-import { useIntersection } from '../../../hooks'
 
 const steps = [
   {

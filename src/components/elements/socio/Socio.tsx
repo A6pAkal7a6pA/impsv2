@@ -35,22 +35,22 @@ const socio = [
     title: 'Medium',
     link: links.medium,
     imgSrc: mediumImg
-  },
-  {
-    title: 'BitcoinTalk',
-    link: links.bitcoinTalk,
-    imgSrc: bitcoinTalkImg
-  },
-  {
-    title: 'Facebook',
-    link: links.facebook,
-    imgSrc: facebookImg
-  },
-  {
-    title: 'Reddit',
-    link: links.reddit,
-    imgSrc: redditImg
   }
+  // {
+  //   title: 'BitcoinTalk',
+  //   link: links.bitcoinTalk,
+  //   imgSrc: bitcoinTalkImg
+  // },
+  // {
+  //   title: 'Facebook',
+  //   link: links.facebook,
+  //   imgSrc: facebookImg
+  // },
+  // {
+  //   title: 'Reddit',
+  //   link: links.reddit,
+  //   imgSrc: redditImg
+  // }
 ]
 
 interface SocioProps {
