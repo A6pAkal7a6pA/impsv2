@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/impsv2/static/css/main.ed014c6b.css",
-    "main.js": "/impsv2/static/js/main.25e55e3c.js",
+    "main.css": "/impsv2/static/css/main.c03a31f4.css",
+    "main.js": "/impsv2/static/js/main.01679315.js",
     "static/media/main-druid.png": "/impsv2/static/media/main-druid.983e7f99021852157797.png",
     "static/media/gameVault.svg": "/impsv2/static/media/gameVault.594d5b261b4f024f08b72bb3a5bfb1d0.svg",
     "static/media/mage-bg.png": "/impsv2/static/media/mage-bg.24a31b1c456565d2871f.png",
@@ -91,11 +91,11 @@
     "static/media/CaretRight.svg": "/impsv2/static/media/CaretRight.a3dd92a1e0e052216374.svg",
     "static/media/CaretLeft-white.svg": "/impsv2/static/media/CaretLeft-white.c662ce24800589014a80.svg",
     "static/media/CaretRight-white.svg": "/impsv2/static/media/CaretRight-white.7253a6ead391cc859975.svg",
-    "main.ed014c6b.css.map": "/impsv2/static/css/main.ed014c6b.css.map",
-    "main.25e55e3c.js.map": "/impsv2/static/js/main.25e55e3c.js.map"
+    "main.c03a31f4.css.map": "/impsv2/static/css/main.c03a31f4.css.map",
+    "main.01679315.js.map": "/impsv2/static/js/main.01679315.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed014c6b.css",
-    "static/js/main.25e55e3c.js"
+    "static/css/main.c03a31f4.css",
+    "static/js/main.01679315.js"
   ]
 }
