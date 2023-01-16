@@ -160,6 +160,25 @@ $mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
         }
       }
     }
+    &.webp {
+      .play-slider__slide {
+        &-warrior {
+          &::after {
+            background: url("../../../assets/heroes/warrior-bg.webp") center / cover no-repeat;
+          }
+        }
+        &-rogue {
+          &::after {
+            background: url("../../../assets/heroes/rogue-bg.webp") center / cover no-repeat;
+          }
+        }
+        &-mage {
+          &::after {
+            background: url("../../../assets/heroes/mage-bg.webp") center / cover no-repeat;
+          }
+        }
+      }
+    }
     &__slide-img {
       display: block;
       width: 100%;

@@ -13,15 +13,21 @@ import 'swiper/scss/navigation'
 import warrior from '../../../assets/heroes/axe.png'
 import rogue from '../../../assets/heroes/rogue.png'
 import mage from '../../../assets/heroes/mage.png'
+import warriorWebp from '../../../assets/heroes/axe.webp'
+import rogueWebp from '../../../assets/heroes/rogue.webp'
+import mageWebp from '../../../assets/heroes/mage.webp'
 import './HowToPlay.scss'
 import { Arrows } from '../../ui/slider/arrows/Arrows'
 import { SectionProps } from '../../../data'
 import { Color, Title } from '../../ui/title/Title'
+import Image from 'react-image-webp'
+import { isWebpSupported } from 'react-image-webp/dist/utils'
 
 const persons = [
   {
     person: 'warrior',
     mainImg: warrior,
+    mainImgWebp: warriorWebp,
     iconImgDefault: warriorIconDefault,
     iconImgActive: warriorIconActive,
     description:
@@ -30,6 +36,7 @@ const persons = [
   {
     person: 'rogue',
     mainImg: rogue,
+    mainImgWebp: rogueWebp,
     iconImgDefault: rogueIconDefault,
     iconImgActive: rogueIconActive,
     description:
@@ -38,6 +45,7 @@ const persons = [
   {
     person: 'mage',
     mainImg: mage,
+    mainImgWebp: mageWebp,
     iconImgDefault: mageIconDefault,
     iconImgActive: mageIconActive,
     description:
@@ -57,7 +65,7 @@ export const HowToPlay = ({ idName }: SectionProps) => {
         <div className="play__content">
           <Arrows />
           <Swiper
-            className="play-slider"
+            className={`play-slider${isWebpSupported() ? ' webp' : ''}`}
             modules={[EffectCoverflow, Navigation, Pagination]}
             effect={'coverflow'}
             navigation={{
@@ -96,9 +104,10 @@ export const HowToPlay = ({ idName }: SectionProps) => {
                 key={index}
                 className={`play-slider__slide play-slider__slide-${el.person}`}
               >
-                <img
+                <Image
                   className="play-slider__slide-img"
                   src={el.mainImg}
+                  webp={el.mainImgWebp}
                   alt={el.person}
                 />
               </SwiperSlide>

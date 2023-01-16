@@ -50,6 +50,7 @@
     "eslint-import-resolver-typescript": "^3.5.2",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.11",
-    "prettier": "^2.8.1"
+    "prettier": "^2.8.1",
+    "react-image-webp": "^0.8.0"
   }
 }

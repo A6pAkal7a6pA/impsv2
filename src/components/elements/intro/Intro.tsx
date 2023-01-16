@@ -5,13 +5,15 @@ import './Intro.scss'
 import { PreTitle } from '../../ui/pre_title/PreTitle'
 import { SectionProps, links } from '../../../data'
 import bg from '../../../assets/main-druid.png'
+import bgWebp from '../../../assets/main-druid.webp'
+import Image from 'react-image-webp'
 
 export const Intro = ({ idName }: SectionProps) => {
   return (
     <section className="intro" id={idName}>
       <div className="intro__inner">
         <div className="intro__bg">
-          <img src={bg} alt="bg" className="intro__bg-img" />
+          <Image src={bg} webp={bgWebp} className="intro__bg-img" />
         </div>
         <div className="intro__info">
           <PreTitle text="The first NFT" />

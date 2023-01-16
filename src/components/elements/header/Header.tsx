@@ -1,7 +1,7 @@
 import { Logo } from '../../ui/logo/Logo'
 import { Navigation } from '../navigation/Navigation'
 import { Button } from '../../ui/button/Button'
-import ShareIcon from '../../../assets/icons/share.svg'
+// import ShareIcon from '../../../assets/icons/share.svg'
 import './Header.scss'
 import { useScrollPosition } from '../../../hooks'
 import { links } from '../../../data'
@@ -19,9 +19,9 @@ export const Header = () => {
           <a href="#Follow_Us" className="header__contact">
             Contact
           </a>
-          <div className="header__share">
+          {/* <div className="header__share">
             <img src={ShareIcon} alt="share" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
