@@ -14,6 +14,7 @@ export const Header = () => {
         <Logo />
         <Navigation />
         <div className="header__info">
+          <Button text="Play game" type="green" link={links.playGame} />
           <Button link={links.pitchDeck} text="Pitch deck" />
           <Button link={links.whitePapper} text="White paper" />
           <a href="#Follow_Us" className="header__contact">

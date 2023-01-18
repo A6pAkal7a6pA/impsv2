@@ -1,4 +1,5 @@
 import React from 'react'
+import roadmapImg0 from '../../../assets/roadmap/road0.png'
 import roadmapImg1 from '../../../assets/roadmap/road1.png'
 import roadmapImg2 from '../../../assets/roadmap/road2.png'
 import roadmapImg3 from '../../../assets/roadmap/road3.png'
@@ -39,17 +40,7 @@ const roadMap = [
       {
         month: 'Sep 2022',
         img: roadmapImg2,
-        description: 'Testnet Release + IDO Start'
-      },
-      {
-        month: 'Nov 2022',
-        img: roadmapImg3,
-        description: 'IDO end + Release'
-      },
-      {
-        month: 'Dec 2022',
-        img: roadmapImg4,
-        description: 'In-game marketplace'
+        description: 'Testnet Release'
       }
     ]
   },
@@ -58,34 +49,34 @@ const roadMap = [
     color: 'green',
     months: [
       {
-        month: 'Feb',
+        month: 'Mar',
+        img: roadmapImg0,
+        description: 'IDO Start'
+      },
+      {
+        month: 'May',
+        img: roadmapImg3,
+        description: 'IDO end + Release'
+      },
+      {
+        month: 'Jun',
+        img: roadmapImg4,
+        description: 'In-game marketplace'
+      },
+      {
+        month: 'Aug',
         img: roadmapImg5,
         description: 'New objects'
       },
       {
-        month: 'Apr',
+        month: 'Oct',
         img: roadmapImg6,
         description: 'Hero Reincarnation'
       },
       {
-        month: 'Jun',
+        month: 'Dec',
         img: roadmapImg7,
         description: 'Dungeons'
-      },
-      {
-        month: 'Aug',
-        img: roadmapImg8,
-        description: 'Bosses'
-      },
-      {
-        month: 'Oct',
-        img: roadmapImg9,
-        description: 'Power-ups'
-      },
-      {
-        month: 'Dec',
-        img: roadmapImg10,
-        description: 'Generals'
       }
     ]
   },
@@ -95,67 +86,82 @@ const roadMap = [
     months: [
       {
         month: 'Feb',
+        img: roadmapImg8,
+        description: 'Bosses'
+      },
+      {
+        month: 'Apr',
+        img: roadmapImg9,
+        description: 'Power-ups'
+      },
+      {
+        month: 'Jun',
+        img: roadmapImg10,
+        description: 'Generals'
+      },
+      {
+        month: 'Aug',
         img: roadmapImg11,
         description: 'Mail and Troops'
       },
       {
-        month: 'Apr',
+        month: 'Oct',
         img: roadmapImg12,
         description: 'New objects'
       },
       {
-        month: 'Jun',
+        month: 'Dec',
         img: roadmapImg13,
         description: 'Clans'
-      },
-      {
-        month: 'Aug',
-        img: roadmapImg14,
-        description: 'Mercenaries and Chat'
-      },
-      {
-        month: 'Oct',
-        img: roadmapImg15,
-        description: 'Clan castle'
-      },
-      {
-        month: 'Dec',
-        img: roadmapImg16,
-        description: 'Place of power'
       }
     ]
   },
   {
-    year: '2025',
+    year: '2025 - 2026',
     color: 'yellow',
     months: [
       {
-        month: 'Feb',
+        month: 'Feb 2025',
+        img: roadmapImg14,
+        description: 'Mercenaries and Chat'
+      },
+      {
+        month: 'Apr 2025',
+        img: roadmapImg15,
+        description: 'Clan castle'
+      },
+      {
+        month: 'Jun 2025',
+        img: roadmapImg16,
+        description: 'Place of power'
+      },
+      {
+        month: 'Aug 2025',
         img: roadmapImg17,
         description: 'War of clans'
       },
       {
-        month: 'Apr',
+        month: 'Oct 2025',
         img: roadmapImg18,
         description: 'New objects'
       },
       {
-        month: 'Jun',
+        month: 'Dec 2025',
         img: roadmapImg19,
         description: 'Alliance'
       },
       {
-        month: 'Aug',
+        month: 'Feb 2026',
         img: roadmapImg20,
         description: 'New objects'
       },
       {
-        month: 'Oct',
+        month: 'Apr 2026',
         img: roadmapImg21,
         description: 'Mythical Forge'
       },
       {
-        month: 'Dec',
+        month: 'Jun 2026',
         img: roadmapImg22,
         description: 'War of Alliances'
       }

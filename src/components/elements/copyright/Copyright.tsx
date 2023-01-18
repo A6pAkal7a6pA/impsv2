@@ -7,13 +7,28 @@ export const Copyright = () => {
     <div className="copy">
       <div className="copy__inner container">
         <div className="copy__links">
-          <a href={links.licenseAgreement} className="copy__link">
+          <a
+            href={links.licenseAgreement}
+            target="_blank"
+            className="copy__link"
+            rel="noreferrer"
+          >
             License Agreement
           </a>
-          <a href={links.indemnityAgreement} className="copy__link">
+          <a
+            href={links.indemnityAgreement}
+            target="_blank"
+            className="copy__link"
+            rel="noreferrer"
+          >
             Indemnity Agreement
           </a>
-          <a href={links.contacts} className="copy__link">
+          <a
+            href={links.contacts}
+            target="_blank"
+            className="copy__link"
+            rel="noreferrer"
+          >
             Contacts
           </a>
         </div>

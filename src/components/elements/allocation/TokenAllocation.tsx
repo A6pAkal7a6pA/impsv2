@@ -7,43 +7,43 @@ import { useIntersection } from '../../../hooks'
 const info = [
   {
     name: 'Seed Round',
-    amount: 140
+    amount: 52
   },
   {
     name: 'Private Round',
-    amount: 330
+    amount: 143
   },
   {
     name: 'Public Round',
-    amount: 105
+    amount: 45.5
   },
   {
     name: 'Team',
-    amount: 300
+    amount: 130
   },
   {
     name: 'Advisors',
-    amount: 75
+    amount: 32.5
   },
   {
     name: 'P2E',
-    amount: 690
+    amount: 299
   },
   {
     name: 'Liquidity',
-    amount: 300
+    amount: 130
   },
   {
     name: 'Marketing',
-    amount: 300
+    amount: 130
   },
   {
     name: 'Ecosystem',
-    amount: 540
+    amount: 234
   },
   {
     name: 'Farming',
-    amount: 240
+    amount: 104
   }
 ]
 

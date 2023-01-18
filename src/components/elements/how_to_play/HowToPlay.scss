@@ -188,6 +188,7 @@ $mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
     }
     .swiper-button-prev,
     .swiper-button-next {
+      cursor: pointer;
       width: 80px;
       height: 80px;
       background: rgba(46, 44, 44, 0.6);

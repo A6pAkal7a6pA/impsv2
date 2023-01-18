@@ -230,11 +230,11 @@
     }
   }
   @media (max-width: 575px) {
-    .button-green {
-      display: none;
-    }
     .button {
       width: 100%;
+    }
+    &__inner {
+      gap: 50px;
     }
     &__buttons {
       width: 100%;

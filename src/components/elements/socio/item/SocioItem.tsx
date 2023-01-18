@@ -15,7 +15,7 @@ export const SocioItem = ({
   withTitle
 }: SocioItemProps) => {
   return (
-    <a href={link} className="socio__link">
+    <a href={link} target="_blank" className="socio__link" rel="noreferrer">
       {withTitle && <span className="socio__title">{title}</span>}
       <img src={imgSrc} alt={title} />
     </a>

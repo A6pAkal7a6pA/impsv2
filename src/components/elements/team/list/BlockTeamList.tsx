@@ -12,6 +12,7 @@ export const BlockTeamList = () => {
           name={person.name}
           position={person.position}
           photo={person.photo}
+          photoWebp={person.photoWebp}
           descriptions={person.descriptions}
         />
       ))}

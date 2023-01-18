@@ -3,7 +3,7 @@ import { Color, Title } from '../../ui/title/Title'
 import distributionImage from '../../../assets/distribution.svg'
 import { Button } from '../../ui/button/Button'
 import './TokenDistribution.scss'
-import { SectionProps } from '../../../data'
+import { SectionProps, links } from '../../../data'
 
 export const TokenDistribution = ({ idName }: SectionProps) => {
   return (
@@ -24,7 +24,7 @@ export const TokenDistribution = ({ idName }: SectionProps) => {
           </div>
         </div>
         <div className="distribution__separator"></div>
-        <Button link="#" text="Open full Tokenomics" />
+        <Button link={links.buyImp} text="Open full Tokenomics" />
       </div>
     </section>
   )

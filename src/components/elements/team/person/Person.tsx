@@ -1,11 +1,13 @@
 import './Person.scss'
 import linkedInImg from '../../../../assets/icons/linkedin.svg'
+import Image from 'react-image-webp'
 
 export interface PersonProps {
   name: string
   position: string
   linkedIn: string
   photo: string
+  photoWebp: string
   descriptions?: string[]
 }
 
@@ -14,12 +16,18 @@ export const Person = ({
   position,
   descriptions,
   linkedIn,
-  photo
+  photo,
+  photoWebp
 }: PersonProps) => {
   return (
     <a href={linkedIn} target="_blank" className="person" rel="noreferrer">
       <div className="person__image">
-        <img src={photo} alt="person" className="person__image-photo" />
+        <Image
+          src={photo}
+          webp={photoWebp}
+          alt="person"
+          className="person__image-photo"
+        />
         <img
           className="person__image-linkedin"
           src={linkedInImg}

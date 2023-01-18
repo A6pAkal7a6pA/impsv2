@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper'
 import 'swiper/scss'
 import { Arrows } from '../../ui/slider/arrows/Arrows'
-import { SectionProps } from '../../../data'
+import { SectionProps, links } from '../../../data'
 
 const tokenomic = [
   {
@@ -87,8 +87,8 @@ export const Tokenomic = ({ idName }: SectionProps) => {
           </Swiper>
           <div className="tokenomic-map__separator"></div>
           <div className="tokenomic-map__buttons">
-            <Button link="#" text="Open full Tokenomics" />
-            <Button type="green" link="#" text="Buy $IMP" />
+            <Button link={links.tokenomic} text="Open full Tokenomics" />
+            <Button type="green" link={links.buyImp} text="Buy $IMP" />
           </div>
         </div>
       </div>
