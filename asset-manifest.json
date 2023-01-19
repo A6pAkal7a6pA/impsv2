@@ -1,10 +1,16 @@
 {
   "files": {
-    "main.css": "/impsv2/static/css/main.ab2fe82d.css",
-    "main.js": "/impsv2/static/js/main.b9a684f5.js",
+    "main.css": "/impsv2/static/css/main.c15234f5.css",
+    "main.js": "/impsv2/static/js/main.83c5c4c2.js",
     "static/media/gameVault.svg": "/impsv2/static/media/gameVault.594d5b261b4f024f08b72bb3a5bfb1d0.svg",
     "static/media/main-druid.png": "/impsv2/static/media/main-druid.0f7fbf52eb9f4a24411f.png",
+    "static/media/mage-bg.png": "/impsv2/static/media/mage-bg.24a31b1c456565d2871f.png",
+    "static/media/rogue-bg.png": "/impsv2/static/media/rogue-bg.1ccc5d2a77ae618cfd54.png",
+    "static/media/warrior-bg.png": "/impsv2/static/media/warrior-bg.e7fa2555f45e72a1ba51.png",
     "static/media/main-druid.webp": "/impsv2/static/media/main-druid.d72079a2e82e8a5bc3a7.webp",
+    "static/media/mage-bg.webp": "/impsv2/static/media/mage-bg.d30a645523fc6ce88668.webp",
+    "static/media/warrior-bg.webp": "/impsv2/static/media/warrior-bg.43f4b7008b30f59a5621.webp",
+    "static/media/rogue-bg.webp": "/impsv2/static/media/rogue-bg.7b80aaae58a049fc0349.webp",
     "static/media/rogue.png": "/impsv2/static/media/rogue.8b3391809ead126fbd07.png",
     "static/media/axe.png": "/impsv2/static/media/axe.d44d008506c648883edb.png",
     "static/media/impToken.svg": "/impsv2/static/media/impToken.64fd5b4fd18762f314ed748b421f32b9.svg",
@@ -105,11 +111,11 @@
     "static/media/CaretRight.svg": "/impsv2/static/media/CaretRight.a3dd92a1e0e052216374.svg",
     "static/media/CaretLeft-white.svg": "/impsv2/static/media/CaretLeft-white.c662ce24800589014a80.svg",
     "static/media/CaretRight-white.svg": "/impsv2/static/media/CaretRight-white.7253a6ead391cc859975.svg",
-    "main.ab2fe82d.css.map": "/impsv2/static/css/main.ab2fe82d.css.map",
-    "main.b9a684f5.js.map": "/impsv2/static/js/main.b9a684f5.js.map"
+    "main.c15234f5.css.map": "/impsv2/static/css/main.c15234f5.css.map",
+    "main.83c5c4c2.js.map": "/impsv2/static/js/main.83c5c4c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab2fe82d.css",
-    "static/js/main.b9a684f5.js"
+    "static/css/main.c15234f5.css",
+    "static/js/main.83c5c4c2.js"
   ]
 }
