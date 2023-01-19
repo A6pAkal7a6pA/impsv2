@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import 'swiper/scss'
 import 'swiper/scss/effect-coverflow'
 import 'swiper/scss/navigation'
@@ -5,6 +6,7 @@ import './HowToPlay.scss'
 import { SectionProps } from '../../../data'
 import { Color, Title } from '../../ui/title/Title'
 import { HowToPlaySlider } from './content/HowToPlaySlider'
+import { useMemo } from 'react'
 
 export const HowToPlay = ({ idName }: SectionProps) => {
   return (

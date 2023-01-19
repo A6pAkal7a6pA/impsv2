@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import warriorIconDefault from '../../../../assets/heroes/warrior-icon-default.png'
 import rogueIconDefault from '../../../../assets/heroes/rogue-icon-default.png'
 import mageIconDefault from '../../../../assets/heroes/mage-icon-default.png'
@@ -20,8 +20,10 @@ import './../HowToPlay.scss'
 import Image from 'react-image-webp'
 import { isWebpSupported } from 'react-image-webp/dist/utils'
 import { Arrows } from '../../../ui/slider/arrows/Arrows'
+import { HowToPlayDescription } from './HowToPlayDescription'
+import { useRef } from 'react'
 
-const persons = [
+export const persons = [
   {
     person: 'warrior',
     mainImg: warrior,
@@ -52,6 +54,7 @@ const persons = [
 ]
 export const HowToPlaySlider = () => {
   const [swiperIndex, setSwiperIndex] = useState(0)
+  console.log('rendered')
   return (
     <div className="play__content">
       <Arrows />
@@ -85,10 +88,7 @@ export const HowToPlaySlider = () => {
         loop={true}
         height={540}
         grabCursor={true}
-        onSlideChange={(swiper) => {
-          console.log('changed')
-          setSwiperIndex(() => swiper.realIndex)
-        }}
+        onRealIndexChange={(swiper) => setSwiperIndex(swiper.realIndex)}
       >
         {persons.map((el, index) => (
           <SwiperSlide
@@ -103,29 +103,8 @@ export const HowToPlaySlider = () => {
             />
           </SwiperSlide>
         ))}
+        <HowToPlayDescription swiperIndex={swiperIndex} />
       </Swiper>
-
-      <div className="play-description">
-        <div className="play-description__inner">
-          <div className="play-description__item">
-            <div className="play-description__title">
-              <img
-                src={persons[swiperIndex].iconImgActive}
-                alt={persons[swiperIndex].person}
-                className="play-description__title-img"
-              />
-              <div
-                className={`play-description__title-text play-description__title-text-${persons[swiperIndex].person}`}
-              >
-                {persons[swiperIndex].person}
-              </div>
-            </div>
-            <div className="play-description__text">
-              {persons[swiperIndex].description}
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }
