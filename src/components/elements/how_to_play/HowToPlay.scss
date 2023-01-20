@@ -47,75 +47,7 @@ $mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
     max-width: 630px;
     margin: 0 auto 40px auto;
   }
-  &-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    $playIcons: &;
-    gap: 24px;
-    &__item {
-      background: linear-gradient(143.97deg, rgba(27, 135, 181, 0.07) -17.08%, rgba(0, 0, 0, 0.03) 74.26%);
-      box-shadow: 0px 24px 113.135px rgba(0, 0, 0, 0.16);
-      backdrop-filter: blur(197.986px);
-      border-radius: 12px;
-      padding: 10px;
-      width: 80px;
-      height: 80px;
-      padding: 10px;
-      background: transparent;
-      border: 1px solid #333333;
-      &::before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-        border-radius: 12px;
-        width: 60px;
-        height: 60px;
-      }
-      &-warrior {
-        &::before {
-          background: url("../../../assets/heroes/warrior-icon-default.png") center / cover no-repeat;
-        }
-      }
-      &-rogue {
-        &::before {
-          background: url("../../../assets/heroes/rogue-icon-default.png") center / cover no-repeat;
-        }
-      }
-      &-mage {
-        &::before {
-          background: url("../../../assets/heroes/mage-icon-default.png") center / cover no-repeat;
-        }
-      }
-      &-active {
-        &#{$playIcons}__item-warrior {
-          &::before {
-            background: url("../../../assets/heroes/warrior-icon-active.png") center / cover no-repeat;
-          }
-        }
 
-        &#{$playIcons}__item-rogue {
-          &::before {
-            background: url("../../../assets/heroes/rogue-icon-active.png") center / cover no-repeat;
-          }
-        }
-
-        &#{$playIcons}__item-mage {
-          &::before {
-            background: url("../../../assets/heroes/mage-icon-active.png") center / cover no-repeat;
-          }
-        }
-      }
-      &:not(.play-icons__item-active) {
-        cursor: pointer;
-      }
-    }
-  }
   &__content {
     position: relative;
   }
@@ -123,6 +55,7 @@ $mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
   &-slider {
     max-width: 1029px;
     width: 100%;
+    padding-bottom: 200px;
     &__slide {
       width: 448px;
       height: 540px;
@@ -210,8 +143,15 @@ $mage: linear-gradient(82.77deg, #f99f2f 5.38%, #fbf6cd 44.75%);
       right: -16px;
     }
   }
+  &__descriptions {
+    position: absolute;
+    z-index: 1;
+  }
   &-description {
     $playDescription: &;
+    &:not(.play-description-active) {
+      display: none;
+    }
     &__inner {
       max-width: 1008px;
       margin-left: auto;

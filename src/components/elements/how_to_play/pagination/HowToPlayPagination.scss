@@ -1,0 +1,42 @@
+.play-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  $playIcons: &;
+  gap: 24px;
+  &__item {
+    $playIconsItem: &;
+    background: linear-gradient(
+      143.97deg,
+      rgba(27, 135, 181, 0.07) -17.08%,
+      rgba(0, 0, 0, 0.03) 74.26%
+    );
+    box-shadow: 0px 24px 113.135px rgba(0, 0, 0, 0.16);
+    backdrop-filter: blur(197.986px);
+    border-radius: 12px;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #333333;
+    &-img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+    &-active {
+        &#{$playIconsItem}-warrior {
+            content: url('../../../../assets/heroes/warrior-icon-active.png');
+        }
+        &#{$playIconsItem}-rogue {
+            content: url('../../../../assets/heroes/rogue-icon-active.png');
+        }
+        &#{$playIconsItem}-mage {
+            content: url('../../../../assets/heroes/mage-icon-active.png');
+        }
+    }
+    &:not(.play-icons__item-active) {
+      cursor: pointer;
+    }
+  }
+}

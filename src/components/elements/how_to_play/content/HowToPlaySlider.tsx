@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import warriorIconDefault from '../../../../assets/heroes/warrior-icon-default.png'
 import rogueIconDefault from '../../../../assets/heroes/rogue-icon-default.png'
 import mageIconDefault from '../../../../assets/heroes/mage-icon-default.png'
@@ -21,9 +20,10 @@ import Image from 'react-image-webp'
 import { isWebpSupported } from 'react-image-webp/dist/utils'
 import { Arrows } from '../../../ui/slider/arrows/Arrows'
 import { HowToPlayDescription } from './HowToPlayDescription'
-import { useRef } from 'react'
+import { renderToString } from 'react-dom/server'
+import { HowToPlayPagination } from '../pagination/HowToPlayPagination'
 
-export const persons = [
+export const persons: HeroProps[] = [
   {
     person: 'warrior',
     mainImg: warrior,
@@ -31,7 +31,8 @@ export const persons = [
     iconImgDefault: warriorIconDefault,
     iconImgActive: warriorIconActive,
     description:
-      'Warrior - professional fighters, have a lot of HP, good protection against physical attacks and high damage, but they are quite slow, have poor protection against magic, and have a low chance to avoid attacks.'
+      'Warrior - professional fighters, have a lot of HP, good protection against physical attacks and high damage, but they are quite slow, have poor protection against magic, and have a low chance to avoid attacks.',
+    isActive: true
   },
   {
     person: 'rogue',
@@ -52,9 +53,18 @@ export const persons = [
       'Mage - heroes with huge magic damage, a variety of abilities, and high magic defense, but they have little health, physical defense and are not very dexterous.'
   }
 ]
+
+export interface HeroProps {
+  person: string
+  mainImg: string
+  mainImgWebp: string
+  iconImgDefault: string
+  iconImgActive: string
+  description: string
+  isActive?: boolean
+}
+
 export const HowToPlaySlider = () => {
-  const [swiperIndex, setSwiperIndex] = useState(0)
-  console.log('rendered')
   return (
     <div className="play__content">
       <Arrows />
@@ -72,8 +82,8 @@ export const HowToPlaySlider = () => {
           bulletClass: 'play-icons__item',
           bulletActiveClass: 'play-icons__item-active',
           el: '.play-icons',
-          renderBullet: function (index, className): string {
-            return `<div class="${className} ${className}-${persons[index].person}"></div>`
+          renderBullet: function (index): string {
+            return renderToString(<HowToPlayPagination {...persons[index]} />)
           }
         }}
         coverflowEffect={{
@@ -88,8 +98,8 @@ export const HowToPlaySlider = () => {
         loop={true}
         height={540}
         grabCursor={true}
-        onRealIndexChange={(swiper) => setSwiperIndex(swiper.realIndex)}
       >
+        <div slot="container-start" className="play-icons"></div>
         {persons.map((el, index) => (
           <SwiperSlide
             key={index}
@@ -103,7 +113,7 @@ export const HowToPlaySlider = () => {
             />
           </SwiperSlide>
         ))}
-        <HowToPlayDescription swiperIndex={swiperIndex} />
+        <HowToPlayDescription />
       </Swiper>
     </div>
   )
