@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Color, Title } from '../../ui/title/Title'
 import { PersonProps } from './person/Person'
-import IGOR_PHOTO from '../../../assets/team/igor.png'
+import IGOR_PHOTO from '../../../assets/team/igor.jpeg'
 import ELIAS_PHOTO from '../../../assets/team/elias.png'
 import MIKE_PHOTO from '../../../assets/team/mike.png'
-import MICHAIL_PHOTO from '../../../assets/team/michail.png'
 import MICHAEL_PHOTO from '../../../assets/team/michael.png'
 import ROSTAM_PHOTO from '../../../assets/team/rostam.png'
 import ANASTASIA_PHOTO from '../../../assets/team/anastasiya.png'
@@ -12,7 +11,6 @@ import GEORGE_PHOTO from '../../../assets/team/egor.png'
 import IGOR_PHOTO_WEBP from '../../../assets/team/igor.webp'
 import ELIAS_PHOTO_WEBP from '../../../assets/team/elias.webp'
 import MIKE_PHOTO_WEBP from '../../../assets/team/mike.webp'
-import MICHAIL_PHOTO_WEBP from '../../../assets/team/michail.webp'
 import MICHAEL_PHOTO_WEBP from '../../../assets/team/michael.webp'
 import ROSTAM_PHOTO_WEBP from '../../../assets/team/rostam.webp'
 import ANASTASIA_PHOTO_WEBP from '../../../assets/team/anastasiya.webp'
@@ -32,10 +30,10 @@ export const persons: PersonProps[] = [
     photo: IGOR_PHOTO,
     photoWebp: IGOR_PHOTO_WEBP,
     descriptions: [
-      '11 years experience in IT',
-      '5 years in Crypto Industry',
-      'CEO IMPS Kingdom, Pain Crusade',
-      'Adviser Gladiators honor',
+      '12 years experience in IT',
+      '6 years in Crypto Industry',
+      'Founder Goldapp.dev',
+      'CEO IMPS Kingdom',
       'CTO SeedLaunch.org'
     ]
   },
@@ -60,16 +58,6 @@ export const persons: PersonProps[] = [
     descriptions: [
       'Winner of Imaguru Blockchain Hackathon 2017 (“ICO Booster” project)',
       'Winner of Imaguru Fintech Hackathon 2018 (“Credit Chain” project)'
-    ]
-  },
-  {
-    name: 'Michail',
-    position: 'Fullstack & blockchain developer',
-    linkedIn: 'https://www.linkedin.com/in/mishanqa-superstario/',
-    photo: MICHAIL_PHOTO,
-    photoWebp: MICHAIL_PHOTO_WEBP,
-    descriptions: [
-      'Experienced and resilts-oriented Fullstack & blockchain developer with more that 6 years of commercial and 8 years of general development experience'
     ]
   },
   {
