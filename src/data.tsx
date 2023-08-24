@@ -31,7 +31,8 @@ export const links = {
     'https://docs.google.com/document/d/1oq7fSljnEET1VJUDmY3ZWtAobfm9pf2g/',
   indemnityAgreement:
     'https://docs.google.com/document/d/1o8iUMpHOlPzHPxlqHoW8UuRkPHuaKz0p/',
-  contacts: 'mailto:markeing@imps.me'
+  contacts: 'mailto:markeing@imps.me',
+  invest: 'https://t.me/goldappdev'
 }
 
 export interface SectionProps {

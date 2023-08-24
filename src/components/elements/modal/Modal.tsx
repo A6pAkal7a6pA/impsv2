@@ -58,6 +58,11 @@ export const Modal = () => {
             </a>
           </div>
           <div className="modal-footer__item">
+            <a href={links.invest} className="modal-footer__link">
+              Want to invest?
+            </a>
+          </div>
+          <div className="modal-footer__item">
             <a href={links.contacts} className="modal-footer__link">
               Contacts
             </a>

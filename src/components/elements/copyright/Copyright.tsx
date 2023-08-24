@@ -24,6 +24,14 @@ export const Copyright = () => {
             Indemnity Agreement
           </a>
           <a
+            href={links.invest}
+            target="_blank"
+            className="copy__link"
+            rel="noreferrer"
+          >
+            Want to invest?
+          </a>
+          <a
             href={links.contacts}
             target="_blank"
             className="copy__link"
