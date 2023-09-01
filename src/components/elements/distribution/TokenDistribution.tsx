@@ -24,7 +24,7 @@ export const TokenDistribution = ({ idName }: SectionProps) => {
           </div>
         </div>
         <div className="distribution__separator"></div>
-        <Button link={links.buyImp} text="Open full Tokenomics" />
+        <Button link={links.tokenomic} text="Open full Tokenomics" />
       </div>
     </section>
   )

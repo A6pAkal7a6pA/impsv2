@@ -11,7 +11,7 @@ export const Button = ({ link, text, type }: ButtonProps) => {
   type && styles.push('button-green')
 
   return (
-    <a href={link} className={styles.join(' ')}>
+    <a href={link} target="_blank" className={styles.join(' ')}>
       {text}
     </a>
   )
