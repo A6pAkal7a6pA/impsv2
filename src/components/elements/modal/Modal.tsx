@@ -38,26 +38,6 @@ export const Modal = () => {
         <Socio />
         <div className="modal-footer">
           <div className="modal-footer__item">
-            <a
-              href={links.licenseAgreement}
-              target="_blank"
-              className="modal-footer__link"
-              rel="noreferrer"
-            >
-              License agreement
-            </a>
-          </div>
-          <div className="modal-footer__item">
-            <a
-              href={links.indemnityAgreement}
-              target="_blank"
-              className="modal-footer__link"
-              rel="noreferrer"
-            >
-              Indemnity Agreement
-            </a>
-          </div>
-          <div className="modal-footer__item">
             <a href={links.invest} className="modal-footer__link">
               Want to invest?
             </a>
