@@ -2,19 +2,19 @@ import React, { useEffect, useState } from 'react'
 import { Color, Title } from '../../ui/title/Title'
 import { PersonProps } from './person/Person'
 import IGOR_PHOTO from '../../../assets/team/igor.jpeg'
-import ELIAS_PHOTO from '../../../assets/team/elias.png'
-import MIKE_PHOTO from '../../../assets/team/mike.png'
-import MICHAEL_PHOTO from '../../../assets/team/michael.png'
-import ROSTAM_PHOTO from '../../../assets/team/rostam.png'
+import ILYA_PHOTO from '../../../assets/team/ilya.jpeg'
+import KOSTYA_PHOTO from '../../../assets/team/kostya.png'
+import LYUBOV_PHOTO from '../../../assets/team/Lyubov.jpeg'
 import ANASTASIA_PHOTO from '../../../assets/team/anastasiya.png'
-import GEORGE_PHOTO from '../../../assets/team/egor.png'
+import ROSTAM_PHOTO from '../../../assets/team/rostam.png'
+import JOVAN_PHOTO from '../../../assets/team/Jovan.jpeg'
 import IGOR_PHOTO_WEBP from '../../../assets/team/igor.webp'
-import ELIAS_PHOTO_WEBP from '../../../assets/team/elias.webp'
-import MIKE_PHOTO_WEBP from '../../../assets/team/mike.webp'
-import MICHAEL_PHOTO_WEBP from '../../../assets/team/michael.webp'
-import ROSTAM_PHOTO_WEBP from '../../../assets/team/rostam.webp'
+import ILYA__PHOTO_WEBP from '../../../assets/team/ilya.webp'
+import KOSTYA_PHOTO_WEBP from '../../../assets/team/kostya.webp'
+import LYUBOV_PHOTO_WEBP from '../../../assets/team/Lyubov.webp'
 import ANASTASIA_PHOTO_WEBP from '../../../assets/team/anastasiya.webp'
-import GEORGE_PHOTO_WEBP from '../../../assets/team/egor.webp'
+import ROSTAM_PHOTO_WEBP from '../../../assets/team/rostam.webp'
+import JOVAN_PHOTO_WEBP from '../../../assets/team/Jovan.webp'
 import './Team.scss'
 import { SectionProps } from '../../../data'
 import 'swiper/scss'
@@ -38,55 +38,46 @@ export const persons: PersonProps[] = [
     ]
   },
   {
-    name: 'Elias',
-    position: 'Gamedesing lead, Team lead',
+    name: 'Ilya',
+    position: 'Fullstack developer',
     linkedIn: 'https://www.linkedin.com/in/ilya-bochenkov-37924a36/',
-    photo: ELIAS_PHOTO,
-    photoWebp: ELIAS_PHOTO_WEBP,
-    descriptions: [
-      'More than 14 years of experience in game design',
-      'More than 4 years of experience in a crypto game',
-      'Worked on huge MMORPG projects like Skyforge and Allods online'
-    ]
+    photo: ILYA_PHOTO,
+    photoWebp: ILYA__PHOTO_WEBP
   },
   {
-    name: 'Mike',
-    position: 'Senior blockchain developer',
-    linkedIn: 'https://www.linkedin.com/in/mike-antonuk-34247a18b/',
-    photo: MIKE_PHOTO,
-    photoWebp: MIKE_PHOTO_WEBP,
-    descriptions: [
-      'Winner of Imaguru Blockchain Hackathon 2017 (“ICO Booster” project)',
-      'Winner of Imaguru Fintech Hackathon 2018 (“Credit Chain” project)'
-    ]
+    name: 'Konstantin',
+    position: 'Lead gamedesigner',
+    linkedIn: 'https://www.linkedin.com/in/konstantin-m-4b9010280/',
+    photo: KOSTYA_PHOTO,
+    photoWebp: KOSTYA_PHOTO_WEBP
   },
   {
-    name: 'Michael',
-    position: 'Unity Developer',
-    linkedIn: 'https://www.linkedin.com/in/michael-luchnikov-1968b514b/',
-    photo: MICHAEL_PHOTO,
-    photoWebp: MICHAEL_PHOTO_WEBP
-  },
-  {
-    name: 'Rostam',
-    position: 'UI/UX, Product Designer',
-    linkedIn: 'https://www.linkedin.com/in/baybulatov/',
-    photo: ROSTAM_PHOTO,
-    photoWebp: ROSTAM_PHOTO_WEBP
+    name: 'Lyubov',
+    position: 'Designer',
+    linkedIn: 'https://www.linkedin.com/in/lyubov-yarychevskaya-358412230',
+    photo: LYUBOV_PHOTO,
+    photoWebp: LYUBOV_PHOTO_WEBP
   },
   {
     name: 'Anastasia',
-    position: '2D Artist',
+    position: 'Designer',
     linkedIn: 'https://www.linkedin.com/in/anastasiya-elchaninova-9b25a7aa/',
     photo: ANASTASIA_PHOTO,
     photoWebp: ANASTASIA_PHOTO_WEBP
   },
   {
-    name: 'George',
-    position: 'Fullstack Engineer',
-    linkedIn: 'https://www.linkedin.com/in/egor-kuzmin-279200206/',
-    photo: GEORGE_PHOTO,
-    photoWebp: GEORGE_PHOTO_WEBP
+    name: 'Rostam',
+    position: 'UI/UX designer',
+    linkedIn: 'https://www.linkedin.com/in/baybulatov/',
+    photo: ROSTAM_PHOTO,
+    photoWebp: ROSTAM_PHOTO_WEBP
+  },
+  {
+    name: 'Jovan',
+    position: 'Community manager',
+    linkedIn: 'https://www.linkedin.com/in/jovan-pozdnyakov',
+    photo: JOVAN_PHOTO,
+    photoWebp: JOVAN_PHOTO_WEBP
   }
 ]
 
