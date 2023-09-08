@@ -40,7 +40,7 @@ export const persons: PersonProps[] = [
   {
     name: 'Ilya',
     position: 'Fullstack developer',
-    linkedIn: 'https://www.linkedin.com/in/ilya-bochenkov-37924a36/',
+    linkedIn: 'https://www.linkedin.com/in/ilyaivanchikov/',
     photo: ILYA_PHOTO,
     photoWebp: ILYA__PHOTO_WEBP
   },

@@ -234,7 +234,7 @@
       width: 100%;
     }
     &__inner {
-      gap: 50px;
+      gap: 35px;
     }
     &__buttons {
       width: 100%;
@@ -245,7 +245,13 @@
       display: flex;
       align-items: stretch;
       justify-content: center;
-      padding: 28px 3px;
+      padding: 20px 3px;
+    }
+  }
+  @media (max-width: 500px) {
+    &-footer {
+      order: 7;
+      display: flex;
     }
   }
 }
