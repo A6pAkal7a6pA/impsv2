@@ -7,7 +7,7 @@
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding: 16.5px;
+  padding: 12px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -16,9 +16,12 @@
   }
   &-green {
     background: linear-gradient(90deg, #66bf31 0%, #308a33 100%);
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
     &:hover {
       background: linear-gradient(264.36deg, #7aff2b -9.35%, #f99f2f 98.01%);
     }
+  }
+  @media (max-width: 1500px) {
+    font-size: 14px;
   }
 }

@@ -29,7 +29,7 @@ import { SectionProps } from '../../../data'
 
 const roadMap = [
   {
-    year: '2021 – 2022',
+    year: 'Stage 1',
     color: 'brown',
     months: [
       {
@@ -41,11 +41,16 @@ const roadMap = [
         month: 'Sep 2022',
         img: roadmapImg2,
         description: 'Testnet Release'
+      },
+      {
+        month: 'Sep 2022',
+        img: roadmapImg2,
+        description: 'Mainnet first stage release'
       }
     ]
   },
   {
-    year: '2023',
+    year: 'Stage 2',
     color: 'green',
     months: [
       {
@@ -81,7 +86,7 @@ const roadMap = [
     ]
   },
   {
-    year: '2024',
+    year: 'Stage 3',
     color: 'blue',
     months: [
       {
@@ -117,7 +122,7 @@ const roadMap = [
     ]
   },
   {
-    year: '2025 - 2026',
+    year: 'Stage 4',
     color: 'yellow',
     months: [
       {

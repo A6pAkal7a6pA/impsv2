@@ -22,7 +22,7 @@ export const links = {
   facebook: '#',
   bitcoinTalk: '#',
   tokenomic:
-    'https://docs.google.com/spreadsheets/d/1fjSx9nH9MTYpIkMlMEq8u0BCjJhNsVxqjiMcREFR4l4/edit#gid=0',
+    'https://docs.google.com/spreadsheets/d/1fjSx9nH9MTYpIkMlMEq8u0BCjJhNsVxqjiMcREFR4l4/edit',
   buyImp: 'https://coinmarketcap.com/currencies/imps-kingdom/',
   telegramChat: 'https://t.me/imptoken',
   telegramChanel: 'https://t.me/impskingdom',
@@ -32,7 +32,9 @@ export const links = {
   indemnityAgreement:
     'https://docs.google.com/document/d/1o8iUMpHOlPzHPxlqHoW8UuRkPHuaKz0p/',
   contacts: 'mailto:markeing@imps.me',
-  invest: 'https://t.me/goldappdev'
+  invest: 'https://t.me/goldappdev',
+  presentation:
+    'https://drive.google.com/file/d/1svh6pVDlxUyDcFhNNW_mbOazRCxRFCPJ/view?usp=sharing'
 }
 
 export interface SectionProps {

@@ -23,7 +23,7 @@
   &__contact {
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #ffffff;
@@ -31,26 +31,31 @@
   &__info {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
     .button {
-      width: 160px;
+      width: auto;
     }
   }
   &__share {
     display: none;
+  }
+  @media (max-width: 1500px) {
+    &__inner {
+      gap: 70px;
+    }
   }
   @media (max-width: 1420px) {
     &__inner {
       gap: 50px;
     }
   }
-  @media (max-width: 1154px) {
+  @media (max-width: 1330px) {
     &__contact,
     &__share {
       display: none;
     }
   }
-  @media (max-width: 1015px) {
+  @media (max-width: 1122px) {
     &__info {
       display: none;
     }

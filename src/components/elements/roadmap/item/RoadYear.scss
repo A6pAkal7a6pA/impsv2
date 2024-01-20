@@ -41,7 +41,7 @@ $yellow: linear-gradient(152.08deg, #d4ab79 47.7%, #d9aa5e 168.73%);
   &__number {
     font-weight: 900;
     font-size: 36px;
-    line-height: 100%;
+    line-height: 45px;
     text-align: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -51,7 +51,7 @@ $yellow: linear-gradient(152.08deg, #d4ab79 47.7%, #d9aa5e 168.73%);
   }
   &__items {
     background: linear-gradient(180deg, rgba(35, 34, 32, 0.4) 0%, rgba(35, 34, 32, 0) 123.88%);
-    border-radius: 0px 0px 24px 24px;
+    border-radius: 0 0 24px 24px;
     position: relative;
     padding-top: 48px;
     padding-bottom: 80px;
@@ -104,7 +104,8 @@ $yellow: linear-gradient(152.08deg, #d4ab79 47.7%, #d9aa5e 168.73%);
   }
 
   &__month {
-    font-family: "Nunito";
+    font-family: "Nunito", serif;
+    display: none;
     font-weight: 800;
     font-size: 27px;
     line-height: 37px;

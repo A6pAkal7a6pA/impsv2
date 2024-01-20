@@ -15,12 +15,11 @@ export const Person = ({
   name,
   position,
   descriptions,
-  linkedIn,
   photo,
   photoWebp
 }: PersonProps) => {
   return (
-    <a href={linkedIn} target="_blank" className="person" rel="noreferrer">
+    <div className="person">
       <div className="person__image">
         <Image
           src={photo}
@@ -45,6 +44,6 @@ export const Person = ({
           ))}
         </ul>
       </div>
-    </a>
+    </div>
   )
 }

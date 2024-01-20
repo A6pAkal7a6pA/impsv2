@@ -23,7 +23,6 @@ export const Modal = () => {
           <div className="modal__buttons">
             <Button text="Play game" type="green" link={links.playGame} />
             <Button text="Pitch deck" link={links.pitchDeck} />
-            <Button text="White paper" link={links.whitePapper} />
           </div>
         </div>
         <div className="modal__body">

@@ -43,10 +43,11 @@ function App() {
   )
 }
 function anchorTransition() {
+  console.log(document.querySelectorAll('a[href*="#"]'))
   for (const anchor of document.querySelectorAll('a[href*="#"]')) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault()
-      const blockID = anchor.getAttribute('href')?.substr(1)
+      const blockID = anchor.getAttribute('href')?.substring(1)
       console.log(blockID)
       if (blockID === undefined) return
 

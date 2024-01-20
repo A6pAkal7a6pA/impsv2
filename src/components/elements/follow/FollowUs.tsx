@@ -14,7 +14,6 @@ export const FollowUs = () => {
         <div className="follow__separator"></div>
         <div className="follow__links">
           <Button link={links.pitchDeck} text="Pitch deck" />
-          <Button link={links.whitePapper} text="White paper" />
         </div>
       </div>
       <Copyright />

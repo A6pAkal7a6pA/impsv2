@@ -1,6 +1,6 @@
 .follow {
   background: linear-gradient(180deg, rgba(35, 34, 32, 0.4) 0%, rgba(35, 34, 32, 0) 123.88%);
-  border-radius: 60px 60px 0px 0px;
+  border-radius: 60px 60px 0 0;
   padding-top: 80px;
   padding-bottom: 60px;
   &__inner {
@@ -36,7 +36,7 @@
   &__links {
     max-width: 344px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     .button {
       max-width: 160px;

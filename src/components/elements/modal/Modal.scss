@@ -123,7 +123,7 @@
     &__link {
       font-family: "Inter", sans-serif;
       font-weight: 800;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 32px;
       color: #fff;
     }
@@ -136,6 +136,11 @@
       min-width: 146px;
       max-width: 146px;
       height: 100px;
+    }
+  }
+  @media (max-height: 1320px) {
+    &-footer {
+      justify-content: center;
     }
   }
   @media (max-height: 1085px) {
@@ -175,7 +180,7 @@
   }
   @media (max-width: 936px) {
     &__head-title {
-      font-size: 45px;
+      font-size: 40px;
       line-height: 57px;
     }
     &__link {
@@ -184,10 +189,10 @@
     }
   }
   @media (max-width: 874px) {
-    &__close,
-    &-footer {
+    &__close {
       justify-content: center;
     }
+
     &__head {
       flex-direction: column;
       gap: 24px;
@@ -251,6 +256,7 @@
   @media (max-width: 500px) {
     &-footer {
       order: 7;
+      gap: 24px;
       display: flex;
     }
   }
